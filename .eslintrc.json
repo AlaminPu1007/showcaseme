@@ -1,3 +1,14 @@
+/*
+Configure eslint for nextJs
+Read more about it: https://dev.to/azadshukor/setting-up-nextjs-13-with-typescript-eslint-47an
+*/
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "root": true
 }
