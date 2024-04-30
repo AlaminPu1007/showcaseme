@@ -21,22 +21,27 @@ const config: Config = {
 
         /** Dark mode schema will be goes here */
 
-        'theme-dark-bg': '#191919',
+        'theme-dark-bg': '#1f1f38',
+        'theme-btn': '#4db5ff',
 
         // define for text
         'theme-dark-primary': '#A7A7A7',
         'theme-dark-secondary': '#CCCCCC',
         'theme-dark-header-txt': '#D9D9D9',
+        'theme-white': '#FFFFFF99',
       },
       container: {
         center: true,
         padding: {
-          DEFAULT: '2rem',
-          sm: '2rem',
+          DEFAULT: '1rem',
+          sm: '1rem',
           md: '1rem',
           lg: '0.5rem',
           xl: '0.5rem',
           '2xl': '0.5rem',
+        },
+        screens: {
+          xl: '1235px',
         },
       },
     },

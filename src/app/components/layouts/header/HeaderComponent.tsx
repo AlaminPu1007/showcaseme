@@ -26,9 +26,9 @@ const HeaderComponent = () => {
   const openDrawerNav = () => setIsDrawerOpen((prv) => !prv);
 
   return (
-    <nav className='container' id='nav-container'>
+    <nav className='container pt-[20px]'>
       {/* for drawer navigation only lg: 1024 screen size */}
-      <div className='relative py-[40px]'>
+      <div className='relative py-[20px]'>
         <div className='nav-wrapper flex'>
           <a
             href='#'
@@ -38,7 +38,7 @@ const HeaderComponent = () => {
           </a>
 
           <ul
-            className={`navbar ${isDrawerOpen ? 'max-[1024px]:translate-x-[0]' : 'max-[1024px]:translate-x-[-100%]'}`}
+            className={`navbar ${isDrawerOpen ? 'max-[1023px]:translate-x-[0]' : 'max-[1023px]:translate-x-[-100%]'}`}
           >
             <li className='flex items-center justify-between lg:hidden'>
               <a
@@ -47,7 +47,7 @@ const HeaderComponent = () => {
               >
                 Jon Doe
               </a>
-              <div className='absolute right-3 top-12 block lg:hidden'>
+              <div className='top-13 absolute right-3 block lg:hidden'>
                 <button
                   onClick={openDrawerNav}
                   className={`relative mt-2 flex h-[18px] w-[26px] cursor-pointer flex-col justify-between duration-300 ease-in`}
@@ -136,61 +136,12 @@ const HeaderComponent = () => {
                 )}
               </button>
             </li>
-
-            {/* <li className='px-[20px] text-xl'>
-          <a href='#'>
-            <svg
-              width='30'
-              height='30'
-              viewBox='0 0 30 30'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                d='M15 0.599976C7.04701 0.599976 0.600006 7.04698 0.600006 15C0.600006 22.953 7.04701 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.04698 22.953 0.599976 15 0.599976ZM11.475 20.9685H8.55901V11.5845H11.475V20.9685ZM9.99901 10.4325C9.07801 10.4325 8.48251 9.77998 8.48251 8.97298C8.48251 8.14948 9.09601 7.51648 10.0365 7.51648C10.977 7.51648 11.553 8.14948 11.571 8.97298C11.571 9.77998 10.977 10.4325 9.99901 10.4325ZM22.125 20.9685H19.209V15.768C19.209 14.5575 18.786 13.7355 17.7315 13.7355C16.926 13.7355 16.4475 14.292 16.236 14.8275C16.158 15.018 16.1385 15.288 16.1385 15.5565V20.967H13.221V14.577C13.221 13.4055 13.1835 12.426 13.1445 11.583H15.678L15.8115 12.8865H15.87C16.254 12.2745 17.1945 11.3715 18.768 11.3715C20.6865 11.3715 22.125 12.657 22.125 15.42V20.9685V20.9685Z'
-                fill='#666666'
-              />
-            </svg>
-          </a>
-        </li>
-        <li className='px-[20px] text-xl'>
-          <a href='#'>
-            <svg
-              width='30'
-              height='30'
-              viewBox='0 0 30 30'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                d='M15 0.599976C7.04701 0.599976 0.600006 7.04698 0.600006 15C0.600006 22.953 7.04701 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.04698 22.953 0.599976 15 0.599976ZM11.475 20.9685H8.55901V11.5845H11.475V20.9685ZM9.99901 10.4325C9.07801 10.4325 8.48251 9.77998 8.48251 8.97298C8.48251 8.14948 9.09601 7.51648 10.0365 7.51648C10.977 7.51648 11.553 8.14948 11.571 8.97298C11.571 9.77998 10.977 10.4325 9.99901 10.4325ZM22.125 20.9685H19.209V15.768C19.209 14.5575 18.786 13.7355 17.7315 13.7355C16.926 13.7355 16.4475 14.292 16.236 14.8275C16.158 15.018 16.1385 15.288 16.1385 15.5565V20.967H13.221V14.577C13.221 13.4055 13.1835 12.426 13.1445 11.583H15.678L15.8115 12.8865H15.87C16.254 12.2745 17.1945 11.3715 18.768 11.3715C20.6865 11.3715 22.125 12.657 22.125 15.42V20.9685V20.9685Z'
-                fill='#666666'
-              />
-            </svg>
-          </a>
-        </li>
-        <li className='px-[20px] text-xl'>
-          <a href='#'>
-            <svg
-              width='30'
-              height='30'
-              viewBox='0 0 30 30'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                d='M15 0.599976C7.04701 0.599976 0.600006 7.04698 0.600006 15C0.600006 22.953 7.04701 29.4 15 29.4C22.953 29.4 29.4 22.953 29.4 15C29.4 7.04698 22.953 0.599976 15 0.599976ZM11.475 20.9685H8.55901V11.5845H11.475V20.9685ZM9.99901 10.4325C9.07801 10.4325 8.48251 9.77998 8.48251 8.97298C8.48251 8.14948 9.09601 7.51648 10.0365 7.51648C10.977 7.51648 11.553 8.14948 11.571 8.97298C11.571 9.77998 10.977 10.4325 9.99901 10.4325ZM22.125 20.9685H19.209V15.768C19.209 14.5575 18.786 13.7355 17.7315 13.7355C16.926 13.7355 16.4475 14.292 16.236 14.8275C16.158 15.018 16.1385 15.288 16.1385 15.5565V20.967H13.221V14.577C13.221 13.4055 13.1835 12.426 13.1445 11.583H15.678L15.8115 12.8865H15.87C16.254 12.2745 17.1945 11.3715 18.768 11.3715C20.6865 11.3715 22.125 12.657 22.125 15.42V20.9685V20.9685Z'
-                fill='#666666'
-              />
-            </svg>
-          </a>
-        </li> */}
           </ul>
         </div>
 
         {!isDrawerOpen ? (
-          <div className='absolute right-0 top-12 flex duration-200 ease-in lg:hidden'>
-            <button onClick={themeToggler} className='me-3 mt-[-2px]  '>
+          <div className='absolute right-0 top-[30px] flex duration-200 ease-in lg:hidden '>
+            <button onClick={themeToggler} className='me-3 mt-[-3px]  '>
               {isDarkMode ? (
                 <svg viewBox='0 0 24 24' fill='none' className='h-6 w-6'>
                   <path
