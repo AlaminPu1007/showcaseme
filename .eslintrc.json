@@ -6,7 +6,9 @@ Read more about it: https://dev.to/azadshukor/setting-up-nextjs-13-with-typescri
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:testing-library/react", // for jest unit testing
+    "plugin:jest-dom/recommended" // for jest unit testing
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
