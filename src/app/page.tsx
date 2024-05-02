@@ -1,10 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { FC } from 'react';
 
-import { techStacks, workExperience } from './constant';
+import {
+  TechStack,
+  TechStackItem,
+  WorkExperience,
+  techStacks,
+  workExperience,
+} from './constant';
 
-const page = () => {
+interface PageProps {}
+
+const page: FC<PageProps> = () => {
   return (
     <>
       <section>
@@ -12,8 +20,7 @@ const page = () => {
           <div className='item-center relative flex justify-center'>
             <div className='text-center'>
               <h5 className='text-md m-0 p-0 font-bold text-theme-dark-bg dark:text-white'>
-                {' '}
-                Hello 👋, I'am
+                {`Hello 👋, I'am`}
               </h5>
               <h1 className='m-0 p-0 py-3 text-4xl font-bold tracking-[.08em] text-theme-secondary dark:text-white'>
                 Jon Doe
@@ -26,7 +33,7 @@ const page = () => {
                   Download Resume
                 </button>
                 <button className=' medium rounded-md border-[1px] bg-theme-btn px-5 py-3 text-theme-dark-bg duration-200 hover:text-white dark:border-0 dark:hover:bg-white dark:hover:text-theme-dark-bg'>
-                  Let's talk
+                  {`Let's talk`}
                 </button>
               </div>
               <div className='item-center flex shrink-[0] justify-center'>
@@ -114,10 +121,10 @@ const page = () => {
           <div className='mt-[20px]'>
             <h1 className='title-txt break-words'>{`Work Experience (0+ Years)`}</h1>
 
-            {workExperience?.map((item, index) => {
+            {workExperience?.map((item: WorkExperience, index: number) => {
               return (
                 <div
-                  className={`group ${Boolean(index === 0) ? 'mt-4' : 'mt-7'}`}
+                  className={`group ${index === 0 ? 'mt-4' : 'mt-7'}`}
                   key={item.id}
                 >
                   <div className='flex shrink-0 items-center justify-between '>
@@ -311,21 +318,18 @@ const page = () => {
             <h1 className='title-txt'> My Tech Stack</h1>
 
             <div className='grid gap-4 md:grid-cols-2'>
-              {techStacks.map((item, index) => {
+              {techStacks.map((item: TechStack) => {
                 return (
-                  <div
-                    className={`${index === 2 ? 'col-start-1 col-end-3' : ''}`}
-                    key={item.id}
-                  >
+                  <div key={item.id}>
                     <h3 className='my-4 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
                       {item.title}
                     </h3>
 
                     {/* render stack lists */}
-                    <div className='grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-2 '>
-                      {item.stacks.map((stack, i) => {
+                    <div className='grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-2'>
+                      {item.stacks.map((stack: TechStackItem) => {
                         return (
-                          <div className='' key={stack.id}>
+                          <div key={stack.id}>
                             <div className={`group flex `}>
                               <svg
                                 strokeWidth={0}
@@ -341,9 +345,22 @@ const page = () => {
                                 />
                               </svg>
                               <div className='ms-3'>
-                                <h4 className='m-0 p-0 text-xl font-semibold text-theme-secondary dark:text-theme-dark-secondary'>
-                                  {stack.name}
-                                </h4>
+                                {stack?.url ? (
+                                  <Link
+                                    href={stack?.url}
+                                    target={'_blank'}
+                                    className={`m-0 block cursor-pointer p-0 text-xl font-semibold text-theme-secondary underline duration-200 dark:text-theme-dark-secondary`}
+                                  >
+                                    {stack.name}
+                                  </Link>
+                                ) : (
+                                  <h1
+                                    className={`m-0 block cursor-auto p-0 text-xl font-semibold text-theme-secondary duration-200 dark:text-theme-dark-secondary`}
+                                  >
+                                    {stack.name}
+                                  </h1>
+                                )}
+
                                 <small className='m-0 p-0 text-theme-primary dark:text-theme-dark-secondary'>
                                   {stack.expertise}
                                 </small>
