@@ -19,11 +19,6 @@
   @apply relative my-2 inline-block whitespace-nowrap px-[0px] pb-2 text-xl text-theme-primary after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-custom-gradient after:duration-200 after:ease-in hover:bg-custom-gradient hover:bg-clip-text hover:text-transparent hover:after:w-full md:text-xl lg:my-0 lg:px-[20px] lg:pb-1 lg:text-xl dark:text-theme-dark-primary;
 }
 
-.border-gradient {
-  // border: solid 5px transparent;
-  // border-radius: 100%;
-  // background-image: linear-gradient(white, white),
-  //   linear-gradient(to bottom, #e70faa, #00c0fd);
-  // background-origin: border-box;
-  // background-clip: content-box, border-box;
+.title-txt {
+  @apply m-0 p-0 py-3 text-3xl font-bold tracking-[.02em] text-theme-secondary dark:text-white;
 }

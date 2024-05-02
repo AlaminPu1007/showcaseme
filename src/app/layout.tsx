@@ -24,7 +24,7 @@ export default function RootLayout({
       <body
         suppressHydrationWarning={true}
         className={`
-          ${poppins.className}  bg-white duration-200 ease-in dark:bg-theme-dark-bg`}
+          ${poppins.className}  bg-[#f5f7fe] duration-200 ease-in dark:bg-theme-dark-bg`}
       >
         <HeaderComponent />
         <main>{children}</main>

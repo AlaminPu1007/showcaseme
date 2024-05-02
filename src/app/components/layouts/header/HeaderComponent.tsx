@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 const HeaderComponent = () => {
@@ -30,23 +31,23 @@ const HeaderComponent = () => {
       {/* for drawer navigation only lg: 1024 screen size */}
       <div className='relative py-[20px]'>
         <div className='nav-wrapper flex'>
-          <a
-            href='#'
+          <Link
+            href='/'
             className='bg-custom-gradient bg-clip-text pr-4 text-4xl text-transparent md:pr-0'
           >
             Jon Doe
-          </a>
+          </Link>
 
           <ul
-            className={`navbar ${isDrawerOpen ? 'max-[1023px]:translate-x-[0]' : 'max-[1023px]:translate-x-[-100%]'}`}
+            className={`navbar z-50 ${isDrawerOpen ? 'max-[1023px]:translate-x-[0]' : 'max-[1023px]:translate-x-[-100%]'}`}
           >
             <li className='flex items-center justify-between lg:hidden'>
-              <a
-                href='#'
+              <Link
+                href='/'
                 className={`mb-3 bg-custom-gradient bg-clip-text pr-4 text-4xl text-transparent md:pr-0 `}
               >
                 Jon Doe
-              </a>
+              </Link>
               <div className='top-13 absolute right-3 block lg:hidden'>
                 <button
                   onClick={openDrawerNav}
