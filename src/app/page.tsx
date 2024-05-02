@@ -313,7 +313,10 @@ const page = () => {
             <div className='grid gap-4 md:grid-cols-2'>
               {techStacks.map((item, index) => {
                 return (
-                  <div className={``} key={item.id}>
+                  <div
+                    className={`${index === 2 ? 'col-start-1 col-end-3' : ''}`}
+                    key={item.id}
+                  >
                     <h3 className='my-4 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
                       {item.title}
                     </h3>

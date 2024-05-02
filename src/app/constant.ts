@@ -118,4 +118,36 @@ export const techStacks = [
       },
     ],
   },
+
+  {
+    id: 3,
+    title: 'Backend Development',
+    stacks: [
+      {
+        id: '201',
+        name: 'Node Js',
+        expertise: 'Experienced',
+      },
+      {
+        id: '202',
+        name: 'Express Js',
+        expertise: 'Experienced',
+      },
+      {
+        id: '203',
+        name: 'MySQL',
+        expertise: 'Experienced',
+      },
+      {
+        id: '204',
+        name: 'Mongo DB',
+        expertise: 'Experienced',
+      },
+      {
+        id: '205',
+        name: 'Adonis Js',
+        expertise: 'Experienced',
+      },
+    ],
+  },
 ];
