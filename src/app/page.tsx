@@ -226,7 +226,7 @@ const page: FC<PageProps> = () => {
             <div className='mt-4'>
               <div className='flex shrink-0 items-center justify-between '>
                 <h3 className='m-0 p-0 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
-                  Bachelor of Science in Computer Science and Engineering
+                  Bachelor in Computer Science and Engineering
                 </h3>
                 <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-semibold text-[#018C0F]'>
                   Full time
