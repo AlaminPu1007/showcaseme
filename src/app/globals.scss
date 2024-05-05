@@ -11,8 +11,9 @@
   The header navigation some reusable thing goes here
 */
 
-// .blue-gradient-wave-animation,
-// body {
+// body
+// .blue-gradient-wave-animation
+// {
 //   animation: gradient 40s linear infinite;
 //   background: linear-gradient(
 //     125deg,
@@ -72,7 +73,7 @@
 }
 
 .tab-btn {
-  @apply me-8 cursor-pointer border-b-[2px] border-[##E5E7EB] px-5 py-2 text-xl text-theme-dark-primary duration-200 hover:border-theme-btn hover:text-theme-btn;
+  @apply me-8 cursor-pointer border-b-[1px] border-[##E5E7EB] px-5 py-2 text-xl text-theme-dark-primary duration-200 hover:border-theme-btn hover:text-theme-btn;
 }
 
 .active-btn {
