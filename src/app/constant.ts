@@ -121,7 +121,8 @@ export const techStacks: TechStack[] = [
 
   {
     id: '2',
-    title: 'Tech Wizardry: Backend & Problem Solver',
+    title: 'Backend & Problem Solver',
+    // title: 'Tech Wizardry: Backend & Problem Solver',
     stacks: [
       {
         id: '207',
@@ -178,5 +179,120 @@ export const techStacks: TechStack[] = [
         url: '',
       },
     ],
+  },
+];
+
+/**
+ * List of my projects
+ */
+export interface ProjectSchema {
+  id: string;
+  name: string;
+  type: string;
+  liveUrl: string | undefined;
+  sourceCodeUrl: string | undefined;
+  description: string;
+  imgPath: string;
+  technology: Array<string>;
+}
+export const projectsData: ProjectSchema[] = [
+  {
+    id: '01',
+    name: 'My Learning 101',
+    imgPath: '/assets/project-photo.png',
+    type: 'frontend',
+    liveUrl: 'https://www.dummy.com',
+    sourceCodeUrl: 'https://www.google.com',
+    description:
+      'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
+    technology: ['React', 'NextJs', 'JavaScript', 'SASS', 'Html', 'CSS'],
+  },
+  {
+    id: '02',
+    name: 'My Learning 101',
+    imgPath: '/assets/project-photo.png',
+    type: 'frontend',
+    liveUrl: 'https://www.dummy.com',
+    sourceCodeUrl: 'https://www.google.com',
+    description:
+      'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
+    technology: ['React', 'NextJs', 'JavaScript', 'SASS', 'Html', 'CSS'],
+  },
+  {
+    id: '03',
+    imgPath: '/assets/project-photo.png',
+    name: 'My Learning 101',
+    type: 'frontend',
+    liveUrl: 'https://www.dummy.com',
+    sourceCodeUrl: 'https://www.google.com',
+    description:
+      'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
+    technology: ['React', 'NextJs', 'JavaScript', 'SASS', 'Html', 'CSS'],
+  },
+  {
+    id: '04',
+    name: 'My Learning 101',
+    type: 'frontend',
+    imgPath: '/assets/project-photo.png',
+    liveUrl: 'https://www.dummy.com',
+    sourceCodeUrl: 'https://www.google.com',
+    description:
+      'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
+    technology: ['React', 'NextJs', 'JavaScript', 'SASS', 'Html', 'CSS'],
+  },
+  {
+    id: '05',
+    name: 'My Learning 101',
+    type: 'frontend',
+    imgPath: '/assets/project-photo.png',
+    liveUrl: 'https://www.dummy.com',
+    sourceCodeUrl: 'https://www.google.com',
+    description:
+      'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
+    technology: ['React', 'NextJs', 'JavaScript', 'SASS', 'Html', 'CSS'],
+  },
+  {
+    id: '06',
+    name: 'My Learning 101',
+    type: 'frontend',
+    liveUrl: 'https://www.dummy.com',
+    imgPath: '/assets/project-photo.png',
+    sourceCodeUrl: 'https://www.google.com',
+    description:
+      'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
+    technology: ['React', 'NextJs', 'JavaScript', 'SASS', 'Html', 'CSS'],
+  },
+  {
+    id: '07',
+    name: 'My Learning 101',
+    type: 'frontend',
+    liveUrl: 'https://www.dummy.com',
+    imgPath: '/assets/project-photo.png',
+    sourceCodeUrl: 'https://www.google.com',
+    description:
+      'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
+    technology: ['React', 'NextJs', 'JavaScript', 'SASS', 'Html', 'CSS'],
+  },
+  {
+    id: '08',
+    name: 'My Learning 101',
+    type: 'frontend',
+    imgPath: '/assets/project-photo.png',
+    liveUrl: 'https://www.dummy.com',
+    sourceCodeUrl: 'https://www.google.com',
+    description:
+      'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
+    technology: ['React', 'NextJs', 'JavaScript', 'SASS', 'Html', 'CSS'],
+  },
+  {
+    id: '09',
+    name: 'My Learning 101',
+    type: 'frontend',
+    imgPath: '/assets/project-photo.png',
+    liveUrl: 'https://www.dummy.com',
+    sourceCodeUrl: 'https://www.google.com',
+    description:
+      'This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content',
+    technology: ['React', 'NextJs', 'JavaScript', 'SASS', 'Html', 'CSS'],
   },
 ];

@@ -62,3 +62,19 @@
 .title-txt {
   @apply m-0 p-0 py-3 text-3xl font-bold tracking-[.02em] text-theme-secondary dark:text-white;
 }
+
+.section-top-gap {
+  @apply mt-[60px] md:mt-[80px];
+}
+
+.title-top-gap {
+  @apply mt-[20px];
+}
+
+.tab-btn {
+  @apply me-8 cursor-pointer border-b-[2px] border-[##E5E7EB] px-5 py-2 text-xl text-theme-dark-primary duration-200 hover:border-theme-btn hover:text-theme-btn;
+}
+
+.active-btn {
+  @apply border-theme-btn text-theme-btn dark:border-theme-btn;
+}
