@@ -16,7 +16,7 @@ import {
 
 interface PageProps {}
 
-const page: FC<PageProps> = () => {
+const Page: FC<PageProps> = () => {
   // define our local state here
   const [activeBtn, setActiveBtn] = useState<string>('1');
 
@@ -427,7 +427,7 @@ const page: FC<PageProps> = () => {
               </li>
             </ul>
             <div className='mt-[40px] grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3'>
-              {projectsData.map((item: ProjectSchema, index: number) => {
+              {projectsData.map((item: ProjectSchema) => {
                 return (
                   <div
                     key={item.id}
@@ -540,4 +540,4 @@ const page: FC<PageProps> = () => {
   );
 };
 
-export default page;
+export default Page;
