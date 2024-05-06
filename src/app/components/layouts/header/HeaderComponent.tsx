@@ -1,12 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const HeaderComponent = () => {
   // define local state
-  const [isDarkMode, setIsDarkMode] = useState<Boolean>(false);
-  const [isDrawerOpen, setIsDrawerOpen] = useState<Boolean>(false);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
 
   // If user selected dark mode or vise versa
   const themeToggler = () => {

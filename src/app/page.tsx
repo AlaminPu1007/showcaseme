@@ -388,11 +388,9 @@ const Page: FC<PageProps> = () => {
         </div>
       </section>
       <section>
-        <div className='section-top-gap container duration-200'>
+        <div className='section-top-gap container mb-[50px] duration-200 md:mb-[80px]'>
           <h1 className='title-txt'> Projects</h1>
-          {/* <p className='m-0 my-3 break-words p-0 text-lg text-theme-primary dark:text-theme-dark-primary'>
-            {`Things I’ve built so far`}
-          </p> */}
+
           <div>
             <ul className='m-0 flex items-center justify-between p-0 md:justify-start'>
               <li>
