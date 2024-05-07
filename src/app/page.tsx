@@ -18,7 +18,27 @@ interface PageProps {}
 
 const Page: FC<PageProps> = () => {
   // define our local state here
-  const [activeBtn, setActiveBtn] = useState<string>('1');
+  const [activeBtn, setActiveBtn] = useState<string>('0');
+  const [data, setData] = useState<ProjectSchema[]>(projectsData || []);
+
+  // filter item by it's type
+  const filteredItem = (type: string, techType: string) => {
+    // update tab-type
+    setActiveBtn(type);
+
+    if (techType === 'all') {
+      return setData(projectsData);
+    }
+
+    // filter data
+    const res = projectsData.filter(
+      (i) => i.type.toLocaleLowerCase() === techType.toLocaleLowerCase()
+    );
+
+    // update root state
+    setData(res);
+  };
+  console.log(projectsData.length);
 
   return (
     <>
@@ -394,22 +414,32 @@ const Page: FC<PageProps> = () => {
           <h1 className='title-txt'> Projects</h1>
 
           <div>
-            <ul className='m-0 flex items-center justify-between p-0 sm:justify-start'>
+            <ul className='m-0 flex flex-wrap items-center justify-between p-0 sm:justify-start'>
+              <li>
+                <button
+                  className={`tab-btn ${activeBtn === '0' ? 'active-btn' : 'dark:border-theme-primary'}`}
+                  onClick={() => {
+                    filteredItem('0', 'all');
+                  }}
+                >
+                  All
+                </button>
+              </li>
               <li>
                 <button
                   className={`tab-btn ${activeBtn === '1' ? 'active-btn' : 'dark:border-theme-primary'}`}
                   onClick={() => {
-                    setActiveBtn('1');
+                    filteredItem('1', 'frontend');
                   }}
                 >
-                  Web
+                  Frontend
                 </button>
               </li>
               <li>
                 <button
                   className={`tab-btn ${activeBtn === '2' ? 'active-btn' : 'dark:border-theme-primary'}`}
                   onClick={() => {
-                    setActiveBtn('2');
+                    filteredItem('2', 'mobile');
                   }}
                 >
                   Mobile
@@ -417,9 +447,9 @@ const Page: FC<PageProps> = () => {
               </li>
               <li>
                 <button
-                  className={`tab-btn ${activeBtn === '3' ? 'active-btn' : 'dark:border-theme-primary'}`}
+                  className={`tab-btn max-[374px]:mt-3 ${activeBtn === '3' ? 'active-btn' : 'dark:border-theme-primary'}`}
                   onClick={() => {
-                    setActiveBtn('3');
+                    filteredItem('3', 'backend');
                   }}
                 >
                   Backend
@@ -427,7 +457,7 @@ const Page: FC<PageProps> = () => {
               </li>
             </ul>
             <div className='mt-[40px] grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3'>
-              {projectsData.map((item: ProjectSchema) => {
+              {data.map((item: ProjectSchema) => {
                 return (
                   <div
                     key={item.id}

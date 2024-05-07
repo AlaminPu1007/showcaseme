@@ -77,7 +77,7 @@
 }
 
 .tab-btn {
-  @apply me-8 cursor-pointer border-b-[1px] border-[#E5E7EB] px-5 py-2 text-base text-theme-dark-primary duration-200 hover:border-theme-btn hover:text-theme-btn max-[425px]:me-4 lg:text-xl;
+  @apply me-8 cursor-pointer border-b-[1px] border-[#E5E7EB] px-5 py-2 text-base text-theme-dark-primary duration-200 hover:border-theme-btn hover:text-theme-btn max-[550px]:px-2 max-[425px]:me-4 lg:text-xl;
 }
 
 .active-btn {

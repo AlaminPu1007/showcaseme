@@ -222,7 +222,7 @@ export const projectsData: ProjectSchema[] = [
     id: '03',
     imgPath: '/assets/project-photo.png',
     name: 'My Learning 101',
-    type: 'frontend',
+    type: 'backend',
     liveUrl: 'https://www.dummy.com',
     sourceCodeUrl: 'https://www.google.com',
     description:
@@ -243,7 +243,7 @@ export const projectsData: ProjectSchema[] = [
   {
     id: '05',
     name: 'My Learning 101',
-    type: 'frontend',
+    type: 'mobile',
     imgPath: '/assets/project-photo.png',
     liveUrl: 'https://www.dummy.com',
     sourceCodeUrl: 'https://www.google.com',
@@ -265,7 +265,7 @@ export const projectsData: ProjectSchema[] = [
   {
     id: '07',
     name: 'My Learning 101',
-    type: 'frontend',
+    type: 'backend',
     liveUrl: 'https://www.dummy.com',
     imgPath: '/assets/project-photo.png',
     sourceCodeUrl: 'https://www.google.com',
@@ -287,7 +287,7 @@ export const projectsData: ProjectSchema[] = [
   {
     id: '09',
     name: 'My Learning 101',
-    type: 'frontend',
+    type: 'mobile',
     imgPath: '/assets/project-photo.png',
     liveUrl: 'https://www.dummy.com',
     sourceCodeUrl: 'https://www.google.com',
