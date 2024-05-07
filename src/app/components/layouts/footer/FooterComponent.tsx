@@ -15,7 +15,7 @@ const FooterComponent = () => {
         <div className=' ms-auto flex items-center duration-200'>
           <Link
             href='mailto:alamin@gmail.com'
-            className='me-[48px] hidden border-b-[1px] border-[transparent] text-base text-theme-secondary duration-200 hover:border-b-[1px] hover:border-theme-secondary md:inline-block dark:text-theme-dark-secondary dark:hover:border-theme-dark-secondary'
+            className='me-[48px] hidden border-b-[1px] border-[transparent] text-base text-theme-secondary duration-200 hover:border-b-[1px] hover:border-theme-secondary md:inline-block lg:text-lg dark:text-theme-dark-secondary dark:hover:border-theme-dark-secondary'
           >
             jondoe@gamil.com
           </Link>
@@ -93,19 +93,48 @@ const FooterComponent = () => {
       </div>
       <div className='block h-[1.5px] bg-[#E2E1E5] duration-200  dark:bg-theme-dark-primary' />
 
-      <div className='flex items-center py-12'>
-        <ul className='flex items-center'>
+      <div className='my-[25px] flex flex-col items-center justify-between lg:flex-row'>
+        <ul className='flex w-full flex-wrap items-center justify-center lg:w-auto lg:justify-start'>
           <li>
-            <Link href={'/'} className='footer-nav-link'>
+            <Link href={'/'} className='footer-nav-link me-4'>
               Home
             </Link>
           </li>
           <li>
-            <Link href={'/'} className='footer-nav-link'>
+            <Link href={'/'} className='footer-nav-link mx-4'>
               About
             </Link>
           </li>
+          <li>
+            <Link href={'/'} className='footer-nav-link mx-4'>
+              Technologies
+            </Link>
+          </li>
+          <li>
+            <Link href={'/'} className='footer-nav-link mx-4 max-[458px]:mt-3'>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link href={'/'} className='footer-nav-link mx-4 max-[570px]:mt-3'>
+              Contact
+            </Link>
+          </li>
         </ul>
+        <p className='mt-[25px] pb-1 text-center text-base text-theme-primary lg:mt-0 lg:text-lg dark:text-theme-dark-primary'>
+          Designed and built by{' '}
+          <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
+            Jon Doe
+          </span>
+          &nbsp;with&nbsp;
+          <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
+            Love{' '}
+          </span>{' '}
+          &{' '}
+          <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
+            Coffee
+          </span>
+        </p>
       </div>
     </div>
   );

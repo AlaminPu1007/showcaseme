@@ -63,37 +63,37 @@ const HeaderComponent = () => {
               </div>
             </li>
             <li>
-              <a
-                href='#'
-                className={`nav-list-item-link dark:hover:bg-initial text-center lg:px-[20px] dark:hover:text-theme-dark-primary`}
+              <Link
+                href='/'
+                className={`nav-list-item-link dark:hover:bg-initial text-center dark:hover:text-theme-dark-primary`}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className='lg:lg:mx-2'>
-              <a className='nav-list-item-link ' href='#'>
+              <Link href='/' className='nav-list-item-link '>
                 About
-              </a>
+              </Link>
             </li>
             <li className='lg:mx-2'>
-              <a className='nav-list-item-link' href='#'>
+              <Link href='/' className='nav-list-item-link'>
                 Tech Stack
-              </a>
+              </Link>
             </li>
             <li className='lg:mx-2'>
-              <a href='#' className='nav-list-item-link'>
+              <Link href='/' className='nav-list-item-link'>
                 Projects
-              </a>
+              </Link>
             </li>
             <li className='lg:mx-2'>
-              <a href='#' className='nav-list-item-link'>
+              <Link href='/' className='nav-list-item-link'>
                 Blog
-              </a>
+              </Link>
             </li>
             <li className='lg:mx-2'>
-              <a className='nav-list-item-link' href='#'>
+              <Link href='/' className='nav-list-item-link'>
                 Contact
-              </a>
+              </Link>
             </li>
             <li className='text-xl max-[1024px]:mt-2 lg:ml-[20px]'>
               <button onClick={themeToggler}>

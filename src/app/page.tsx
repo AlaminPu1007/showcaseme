@@ -138,7 +138,7 @@ const Page: FC<PageProps> = () => {
                     <h3 className='m-0 p-0 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
                       {item.title}
                     </h3>
-                    <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-semibold text-[#018C0F]'>
+                    <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-semibold text-[#01AE13] opacity-100 dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
                       {item.type}
                     </p>
                   </div>
@@ -221,7 +221,7 @@ const Page: FC<PageProps> = () => {
                     </div>
                   </div>
 
-                  <div className='mt-[20px] block h-[1px] bg-[#EBEAED] duration-200 group-hover:bg-theme-dark-bg dark:bg-theme-dark-secondary dark:group-hover:bg-[#EBEAED]' />
+                  <div className='mt-[20px] block h-[1px] bg-[#EBEAED] duration-200 group-hover:bg-theme-dark-bg dark:bg-theme-dark-secondary dark:group-hover:bg-theme-btn' />
                 </div>
               );
             })}
@@ -235,8 +235,8 @@ const Page: FC<PageProps> = () => {
                 <h3 className='m-0 p-0 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
                   Bachelor in Computer Science and Engineering
                 </h3>
-                <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-semibold text-[#018C0F]'>
-                  Full time
+                <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-semibold text-[#01AE13] opacity-100 dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
+                  Full Time
                 </p>
               </div>
 
@@ -317,7 +317,7 @@ const Page: FC<PageProps> = () => {
                   </span>
                 </div>
               </div>
-              <div className='mt-[20px] block h-[1px] bg-[#EBEAED] duration-200 group-hover:bg-theme-dark-bg dark:bg-theme-dark-secondary dark:group-hover:bg-[#EBEAED]' />
+              <div className='mt-[20px] block h-[1px] bg-[#EBEAED] duration-200 group-hover:bg-theme-dark-bg dark:bg-theme-dark-secondary dark:group-hover:bg-theme-btn' />
             </div>
           </div>
 
