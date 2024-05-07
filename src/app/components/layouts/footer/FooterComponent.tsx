@@ -91,7 +91,7 @@ const FooterComponent = () => {
           </Link>
         </div>
       </div>
-      <div className='block h-[1.5px] bg-[#E2E1E5] duration-200  dark:bg-theme-dark-primary' />
+      <div className='block opacity-80 dark:opacity-50 h-[0.5px] bg-[#E2E1E5] duration-200  dark:bg-theme-dark-primary' />
 
       <div className='my-[25px] flex flex-col items-center justify-between lg:flex-row'>
         <ul className='flex w-full flex-wrap items-center justify-center lg:w-auto lg:justify-start'>

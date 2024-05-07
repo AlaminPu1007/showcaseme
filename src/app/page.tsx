@@ -38,7 +38,6 @@ const Page: FC<PageProps> = () => {
     // update root state
     setData(res);
   };
-  console.log(projectsData.length);
 
   return (
     <>
@@ -158,7 +157,7 @@ const Page: FC<PageProps> = () => {
                     <h3 className='m-0 p-0 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
                       {item.title}
                     </h3>
-                    <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-semibold text-[#01AE13] opacity-100 dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
+                    <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-medium text-[#01AE13] opacity-100 dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
                       {item.type}
                     </p>
                   </div>
@@ -255,7 +254,7 @@ const Page: FC<PageProps> = () => {
                 <h3 className='m-0 p-0 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
                   Bachelor in Computer Science and Engineering
                 </h3>
-                <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-semibold text-[#01AE13]  dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
+                <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-medium text-[#01AE13]  dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
                   Full Time
                 </p>
               </div>
@@ -461,15 +460,15 @@ const Page: FC<PageProps> = () => {
                 return (
                   <div
                     key={item.id}
-                    className='group overflow-hidden rounded-lg border-[1.5px] bg-white shadow-md duration-200 hover:border-theme-btn hover:shadow-lg dark:border-[#363636] dark:bg-[#19192d] dark:hover:border-[#19192d]'
+                    className='group relative overflow-hidden rounded-lg border-[0.5px] border-white bg-white  shadow-md duration-200 hover:shadow-lg dark:border-[transparent] dark:bg-[#19192d] dark:hover:border-[#19192d]'
                   >
-                    <div className='relative h-[260px] w-full rounded-lg'>
+                    <div className='relative h-[260px] w-full overflow-hidden rounded-lg'>
                       <Image
                         src={item.imgPath}
                         alt='project-template-photo'
                         fill
                         priority
-                        className='rounded-t-lg object-cover duration-200 group-hover:scale-[1.02]'
+                        className='rounded-t-lg object-cover duration-500 group-hover:scale-[1.01]'
                       />
                     </div>
                     <div className='px-5 pt-5'>
