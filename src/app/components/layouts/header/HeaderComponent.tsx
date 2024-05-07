@@ -1,12 +1,30 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const HeaderComponent = () => {
   // define local state
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
+
+  const ref = useRef<HTMLUListElement | null>(null);
+
+  // This module is for to detect user outside click of the given id
+  // It will help us to close our open navigation
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleClickOutside = (event: Event) => {
+        if (ref.current && !ref.current.contains(event.target as Node)) {
+          isDrawerOpen && setIsDrawerOpen(false);
+        }
+      };
+      document.addEventListener('click', handleClickOutside, true);
+      return () => {
+        document.removeEventListener('click', handleClickOutside, true);
+      };
+    }
+  }, [isDrawerOpen]);
 
   // If user selected dark mode or vise versa
   const themeToggler = () => {
@@ -40,6 +58,8 @@ const HeaderComponent = () => {
 
           <ul
             className={`navbar z-50 ${isDrawerOpen ? 'max-[1023px]:translate-x-[0]' : 'max-[1023px]:translate-x-[-100%]'}`}
+            id='drawer-navigation'
+            ref={ref}
           >
             <li className='flex items-center justify-between lg:hidden'>
               <Link
