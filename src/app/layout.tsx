@@ -6,7 +6,7 @@ import FooterComponent from './components/layouts/footer/FooterComponent';
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['200', '100', '300', '400', '500', '600', '700', '800'],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' className='scroll-smooth'>
       <body
         suppressHydrationWarning={true}
         className={`

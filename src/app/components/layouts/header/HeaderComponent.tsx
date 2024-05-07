@@ -91,27 +91,30 @@ const HeaderComponent = () => {
               </Link>
             </li>
             <li className='lg:lg:mx-2'>
-              <Link href='/' className='nav-list-item-link '>
+              <Link href='/#about-myself' className='nav-list-item-link '>
                 About
               </Link>
             </li>
             <li className='lg:mx-2'>
-              <Link href='/' className='nav-list-item-link'>
+              <Link href='/#my-tech-stack' className='nav-list-item-link'>
                 Tech Stack
               </Link>
             </li>
             <li className='lg:mx-2'>
-              <Link href='/' className='nav-list-item-link'>
+              <Link
+                href='/#my-personal-projects'
+                className='nav-list-item-link'
+              >
                 Projects
               </Link>
             </li>
             <li className='lg:mx-2'>
-              <Link href='/' className='nav-list-item-link'>
+              <Link href='/blog' className='nav-list-item-link'>
                 Blog
               </Link>
             </li>
             <li className='lg:mx-2'>
-              <Link href='/' className='nav-list-item-link'>
+              <Link href='/#footer-widget' className='nav-list-item-link'>
                 Contact
               </Link>
             </li>

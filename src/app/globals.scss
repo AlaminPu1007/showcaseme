@@ -61,7 +61,7 @@
 // }
 
 .nav-list-item-link {
-  @apply relative my-2 inline-block whitespace-nowrap px-1 pb-2 text-xl text-theme-primary after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-theme-secondary after:duration-200 hover:after:w-full md:text-xl lg:mx-[15px] lg:my-0 lg:pb-1 lg:text-xl dark:text-theme-dark-primary dark:after:bg-theme-white;
+  @apply relative my-2 inline-block whitespace-nowrap px-1 pb-2 text-lg font-light text-theme-primary after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-theme-secondary after:duration-200 hover:after:w-full lg:mx-[12px] lg:my-0  lg:pb-1 dark:text-theme-dark-primary dark:after:bg-theme-white;
 }
 
 .title-txt {

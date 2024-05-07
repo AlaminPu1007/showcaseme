@@ -14,9 +14,12 @@ import {
   workExperience,
 } from './constant';
 
+import { motion } from 'framer-motion';
+
 interface PageProps {}
 
-const Page: FC<PageProps> = () => {
+const Page: FC<PageProps> = () => 
+  {
   // define our local state here
   const [activeBtn, setActiveBtn] = useState<string>('0');
   const [data, setData] = useState<ProjectSchema[]>(projectsData || []);
@@ -77,7 +80,7 @@ const Page: FC<PageProps> = () => {
             </div>
             {/* social icon goes here */}
             <div className='absolute bottom-[40%] left-0 hidden flex-col items-center justify-between sm:flex'>
-              <div className='mb-3 h-[28px] w-[1px] bg-theme-primary duration-200  dark:bg-theme-btn '></div>
+              <div className='mb-3 h-[35px] w-[1px] bg-theme-primary duration-200  dark:bg-theme-btn '></div>
               <Link href='/' className='group cursor-pointer'>
                 <svg
                   width='24'
@@ -126,7 +129,7 @@ const Page: FC<PageProps> = () => {
                   />
                 </svg>
               </Link>
-              <div className='mt-3 h-[28px] w-[1px] bg-theme-primary duration-200  dark:bg-theme-btn '></div>
+              <div className='mt-3 h-[35px] w-[1px] bg-theme-primary duration-200  dark:bg-theme-btn '></div>
             </div>
           </div>
         </div>
@@ -134,7 +137,7 @@ const Page: FC<PageProps> = () => {
 
       <section>
         <div className='section-top-gap container duration-200'>
-          <div>
+          <div id='about-myself'>
             <h1 className='title-txt'>About Me</h1>
             <p className='m-0 mt-3 break-words p-0 text-lg text-theme-primary dark:text-theme-dark-primary'>
               The Generator App is an online tool that helps you to export
@@ -148,10 +151,23 @@ const Page: FC<PageProps> = () => {
             <h1 className='title-txt break-words'>{`Work Experience (0+ Years)`}</h1>
 
             {workExperience?.map((item: WorkExperience, index: number) => {
+              // define delay time for each node
+              const delayTime = Number('0.' + index + 1 * 2);
+
               return (
-                <div
+                <motion.div
                   className={`group ${index === 0 ? 'mt-4' : 'mt-7'}`}
                   key={item.id}
+                  initial='hidden'
+                  animate='visible'
+                  transition={{
+                    duration: 0.5,
+                    delay: delayTime,
+                  }}
+                  variants={{
+                    visible: { opacity: 1, y: 0 },
+                    hidden: { opacity: 0, y: -50 },
+                  }}
                 >
                   <div className='flex shrink-0 items-center justify-between '>
                     <h3 className='m-0 p-0 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
@@ -241,7 +257,7 @@ const Page: FC<PageProps> = () => {
                   </div>
 
                   <div className='mt-[20px] block h-[0.5px] bg-[#EBEAED] opacity-80 duration-200 group-hover:bg-theme-dark-bg group-hover:opacity-35 dark:bg-theme-dark-secondary dark:opacity-50 dark:group-hover:bg-theme-btn' />
-                </div>
+                </motion.div>
               );
             })}
           </div>
@@ -341,15 +357,28 @@ const Page: FC<PageProps> = () => {
             </div>
           </div>
 
-          <div className='title-top-gap'>
+          <div className='title-top-gap' id='my-tech-stack'>
             <h1 className='title-txt'> My Tech Stack</h1>
 
             <div className='title-top-gap grid grid-cols-1 gap-8 lg:grid-cols-2'>
-              {techStacks.map((item: TechStack) => {
+              {techStacks.map((item: TechStack, index: number) => {
+                // define delay time for each node
+                const delayTime = Number('0.' + index * 0.22);
                 return (
-                  <div
+                  <motion.div
                     key={item.id}
-                    className={`group rounded-xl border-[1px]  pb-7 pe-[20px] ps-[40px] shadow-sm duration-200 hover:border-theme-btn sm:ps-[80px] md:pe-[20px] lg:ps-[60px] xl:px-[50px]`}
+                    className={` group rounded-xl  border-[1px] pb-7 pe-[20px] ps-[40px] shadow-sm duration-200 hover:border-theme-btn sm:ps-[80px] md:pe-[20px] lg:ps-[60px] xl:px-[50px]`}
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 0.5,
+                      delay: delayTime,
+                    }}
+                    variants={{
+                      visible: { opacity: 1, scale: 1 },
+                      hidden: { opacity: 0, scale: 0.85 },
+                    }}
                   >
                     <h3 className='my-4 mt-6 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
                       {item.title}
@@ -400,7 +429,7 @@ const Page: FC<PageProps> = () => {
                         );
                       })}
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>
@@ -408,7 +437,7 @@ const Page: FC<PageProps> = () => {
         </div>
       </section>
 
-      <section>
+      <section id='my-personal-projects'>
         <div className='title-top-gap container mb-[50px] duration-200 md:mb-[80px]'>
           <h1 className='title-txt'> Projects</h1>
 
@@ -456,11 +485,27 @@ const Page: FC<PageProps> = () => {
               </li>
             </ul>
             <div className='mt-[40px] grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3'>
-              {data.map((item: ProjectSchema) => {
+              {data.map((item: ProjectSchema, index: number) => {
+                // define delay time for each node
+                const delayTime = Number('0.' + index * 0.22);
+
+                // avoid this to used in real life application
+                // this may cause to performance issue
+                // we have need to framer motion each time, so we have to choose this
+                const keyId = item.id + Math.floor(Math.random() * 999);
+
                 return (
-                  <div
-                    key={item.id}
-                    className='group relative overflow-hidden rounded-lg border-[0.5px] border-white bg-white  shadow-md duration-200 hover:shadow-lg dark:border-[transparent] dark:bg-[#19192d] dark:hover:border-[#19192d]'
+                  <motion.div
+                    key={keyId}
+                    className='group relative overflow-hidden rounded-lg border-[0.5px] border-white bg-white  shadow-md hover:shadow-lg dark:border-[transparent] dark:bg-[#19192d] dark:hover:border-[#19192d]'
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: delayTime }}
+                    variants={{
+                      visible: { opacity: 1, scale: 1 },
+                      hidden: { opacity: 0, scale: 0.7 },
+                    }}
                   >
                     <div className='relative h-[260px] w-full overflow-hidden rounded-lg'>
                       <Image
@@ -558,7 +603,7 @@ const Page: FC<PageProps> = () => {
                         </Link>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>
