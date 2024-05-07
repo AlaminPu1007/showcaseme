@@ -39,7 +39,7 @@ const Page: FC<PageProps> = () => {
                 <button className='mb-7 whitespace-nowrap rounded-md border-[1px] px-8 py-3 duration-200 hover:bg-theme-btn hover:text-white sm:mb-0 sm:me-5 dark:border-theme-btn dark:text-theme-btn dark:hover:bg-white dark:hover:text-theme-dark-bg'>
                   Download Resume
                 </button>
-                <button className=' medium rounded-md border-[1px] bg-theme-btn px-5 py-3 text-theme-dark-bg duration-200 hover:text-white dark:border-0 dark:hover:bg-white dark:hover:text-theme-dark-bg'>
+                <button className=' medium rounded-md border-[1px] bg-theme-btn px-5 py-3 text-white duration-200 hover:text-white dark:border-0 dark:hover:bg-white dark:hover:text-theme-dark-bg'>
                   {`Let's talk`}
                 </button>
               </div>
@@ -221,7 +221,7 @@ const Page: FC<PageProps> = () => {
                     </div>
                   </div>
 
-                  <div className='mt-[20px] block h-[1px] bg-[#EBEAED] duration-200 group-hover:bg-theme-dark-bg dark:bg-theme-dark-secondary dark:group-hover:bg-theme-btn' />
+                  <div className='mt-[20px] block h-[0.5px] bg-[#EBEAED] opacity-80 duration-200 group-hover:bg-theme-dark-bg group-hover:opacity-35 dark:bg-theme-dark-secondary dark:opacity-50 dark:group-hover:bg-theme-btn' />
                 </div>
               );
             })}
@@ -235,7 +235,7 @@ const Page: FC<PageProps> = () => {
                 <h3 className='m-0 p-0 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
                   Bachelor in Computer Science and Engineering
                 </h3>
-                <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-semibold text-[#01AE13] opacity-100 dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
+                <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-semibold text-[#01AE13]  dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
                   Full Time
                 </p>
               </div>
@@ -317,7 +317,8 @@ const Page: FC<PageProps> = () => {
                   </span>
                 </div>
               </div>
-              <div className='mt-[20px] block h-[1px] bg-[#EBEAED] duration-200 group-hover:bg-theme-dark-bg dark:bg-theme-dark-secondary dark:group-hover:bg-theme-btn' />
+
+              <div className='mt-[20px] block h-[0.5px] bg-[#EBEAED] opacity-80 duration-200 group-hover:bg-theme-dark-bg group-hover:opacity-35 dark:bg-theme-dark-secondary dark:opacity-50 dark:group-hover:bg-theme-btn' />
             </div>
           </div>
 
@@ -387,12 +388,13 @@ const Page: FC<PageProps> = () => {
           </div>
         </div>
       </section>
+
       <section>
-        <div className='section-top-gap container mb-[50px] duration-200 md:mb-[80px]'>
+        <div className='title-top-gap container mb-[50px] duration-200 md:mb-[80px]'>
           <h1 className='title-txt'> Projects</h1>
 
           <div>
-            <ul className='m-0 flex items-center justify-between p-0 md:justify-start'>
+            <ul className='m-0 flex items-center justify-between p-0 sm:justify-start'>
               <li>
                 <button
                   className={`tab-btn ${activeBtn === '1' ? 'active-btn' : 'dark:border-theme-primary'}`}

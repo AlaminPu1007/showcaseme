@@ -73,11 +73,11 @@
 }
 
 .title-top-gap {
-  @apply mt-[20px];
+  @apply mt-[20px] lg:mt-[40px];
 }
 
 .tab-btn {
-  @apply me-8 cursor-pointer border-b-[1px] border-[#E5E7EB] px-5 py-2 text-xl text-theme-dark-primary duration-200 hover:border-theme-btn hover:text-theme-btn;
+  @apply me-8 cursor-pointer border-b-[1px] border-[#E5E7EB] px-5 py-2 text-base text-theme-dark-primary duration-200 hover:border-theme-btn hover:text-theme-btn max-[425px]:me-4 lg:text-xl;
 }
 
 .active-btn {
