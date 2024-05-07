@@ -18,8 +18,7 @@ import { motion } from 'framer-motion';
 
 interface PageProps {}
 
-const Page: FC<PageProps> = () => 
-  {
+const Page: FC<PageProps> = () => {
   // define our local state here
   const [activeBtn, setActiveBtn] = useState<string>('0');
   const [data, setData] = useState<ProjectSchema[]>(projectsData || []);
