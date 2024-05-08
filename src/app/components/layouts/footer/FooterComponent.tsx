@@ -128,18 +128,18 @@ const FooterComponent = () => {
               </Link>
             </li>
             <li>
-              <Link href={'/'} className='footer-nav-link mx-4'>
+              <Link href={'/#about-myself'} className='footer-nav-link mx-4'>
                 About
               </Link>
             </li>
             <li>
-              <Link href={'/'} className='footer-nav-link mx-4'>
+              <Link href={'/#my-tech-stack'} className='footer-nav-link mx-4'>
                 Technologies
               </Link>
             </li>
             <li>
               <Link
-                href={'/'}
+                href={'/#my-personal-projects'}
                 className='footer-nav-link mx-4 max-[458px]:mt-3'
               >
                 Projects
@@ -147,7 +147,7 @@ const FooterComponent = () => {
             </li>
             <li>
               <Link
-                href={'/'}
+                href={'/#footer-widget'}
                 className='footer-nav-link mx-4 max-[570px]:mt-3'
               >
                 Contact
