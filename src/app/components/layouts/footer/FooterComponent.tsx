@@ -8,7 +8,7 @@ const FooterComponent = () => {
         <div className='my-[25px] flex items-center'>
           <Link
             href='/'
-            className='bg-custom-gradient bg-clip-text pr-4 text-4xl text-transparent md:pr-0'
+            className='pr-2 text-2xl text-theme-secondary sm:pr-4 sm:text-4xl md:pr-0 dark:text-theme-dark-primary'
           >
             Jon Doe
           </Link>
@@ -42,7 +42,7 @@ const FooterComponent = () => {
               </svg>
             </Link>
 
-            <Link href='/' className='group me-5 cursor-pointer'>
+            <Link href='/' className='group me-4 cursor-pointer sm:me-5'>
               <svg
                 width='24'
                 height='24'
@@ -60,7 +60,33 @@ const FooterComponent = () => {
                 />
               </svg>
             </Link>
-            <Link href={'/'} className='group me-5 cursor-pointer'>
+            <Link href='/' className='group me-3 cursor-pointer sm:me-4'>
+              <svg
+                width='30'
+                height='30'
+                viewBox='0 0 30 30'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.80429 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.80429 6.05357 7.92893 7.92893C6.05357 9.80429 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.80429 23.9464 12.3478 25 15 25ZM15 27.5C8.09625 27.5 2.5 21.9037 2.5 15C2.5 8.09625 8.09625 2.5 15 2.5C21.9037 2.5 27.5 8.09625 27.5 15C27.5 21.9037 21.9037 27.5 15 27.5Z'
+                  fill='#42446E'
+                  className='duration-200 group-hover:fill-theme-btn dark:fill-theme-btn dark:group-hover:fill-white'
+                />
+                <path
+                  d='M18.4325 20.085V16.79H19.4725V21.1787H10.0812V16.79H11.1212V20.085H18.4325Z'
+                  fill='#42446E'
+                  className='duration-200 group-hover:fill-theme-btn dark:fill-theme-btn dark:group-hover:fill-white'
+                />
+                <path
+                  d='M12.27 16.4775L17.3788 17.6L17.595 16.52L12.4863 15.3975L12.27 16.4775ZM12.945 13.92L17.6763 16.2363L18.1075 15.2413L13.3788 12.9125L12.9463 13.92H12.945ZM14.2575 11.4775L18.27 14.9863L18.9325 14.1488L14.92 10.6388L14.2575 11.4775ZM16.8513 8.8775L16.0138 9.53125L19.1213 13.935L19.9588 13.2813L16.8513 8.8775ZM12.1625 18.9775H17.3788V17.8838H12.1625V18.9775Z'
+                  fill='#42446E'
+                  className='duration-200 group-hover:fill-theme-btn dark:fill-theme-btn dark:group-hover:fill-white'
+                />
+              </svg>
+            </Link>
+
+            <Link href={'/'} className='group me-4 cursor-pointer sm:me-5'>
               <svg
                 width='25'
                 height='25'

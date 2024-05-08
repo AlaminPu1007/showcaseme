@@ -56,7 +56,7 @@
 // }
 
 .nav-list-item-link {
-  @apply relative my-2 inline-block whitespace-nowrap px-1 pb-2 text-lg font-light text-theme-primary after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-theme-secondary after:duration-200 hover:after:w-full lg:mx-[12px] lg:my-0  lg:pb-1 dark:text-theme-dark-primary dark:after:bg-theme-white;
+  @apply relative my-2 inline-block whitespace-nowrap px-1 pb-2 text-lg font-light text-theme-primary duration-300 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-theme-secondary after:duration-200 hover:after:w-full lg:mx-[12px] lg:my-0 lg:pb-1 dark:text-theme-dark-primary dark:after:bg-theme-white;
 }
 
 .title-txt {
@@ -72,7 +72,7 @@
 }
 
 .tab-btn {
-  @apply me-8 cursor-pointer border-b-[1px] border-[#E5E7EB] px-5 py-2 text-base text-theme-dark-primary duration-200 hover:border-theme-btn hover:text-theme-btn max-[550px]:px-2 max-[425px]:me-4 lg:text-xl;
+  @apply me-8 cursor-pointer border-b-[1px] border-[#E5E7EB] px-4 py-2 text-base text-theme-dark-primary duration-200 hover:border-theme-btn hover:text-theme-btn max-[550px]:px-2 max-[425px]:me-4 lg:text-lg;
 }
 
 .active-btn {

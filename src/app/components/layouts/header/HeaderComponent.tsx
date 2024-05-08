@@ -164,7 +164,7 @@ const HeaderComponent = () => {
         </div>
 
         {!isDrawerOpen ? (
-          <div className='absolute right-0 top-[30px] flex duration-200 ease-in lg:hidden '>
+          <div className='absolute right-[2%] top-[30px] flex duration-200 ease-in lg:hidden '>
             <button onClick={themeToggler} className='me-3 mt-[-3px]  '>
               {isDarkMode ? (
                 <svg viewBox='0 0 24 24' fill='none' className='h-6 w-6'>
@@ -206,7 +206,7 @@ const HeaderComponent = () => {
               )}
             </button>
             <button
-              className='relative flex h-[18px] w-[26px] flex-col justify-between '
+              className='relative flex h-[18px] w-[26px] flex-col justify-between'
               onClick={openDrawerNav}
             >
               <span className='inline h-[2px] w-full bg-theme-primary dark:bg-white dark:opacity-70'></span>

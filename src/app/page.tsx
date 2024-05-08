@@ -50,7 +50,7 @@ const Page: FC<PageProps> = () => {
               <h5 className='text-md m-0 p-0 font-bold text-theme-dark-bg dark:text-white'>
                 {`Hello 👋, I'am`}
               </h5>
-              <h1 className='m-0 p-0 py-3 text-4xl font-bold tracking-[.08em] text-theme-secondary dark:text-white'>
+              <h1 className='m-0 p-0 py-3 text-4xl font-bold tracking-[.06em] text-theme-secondary lg:text-5xl dark:text-white'>
                 Jon Doe
               </h1>
               <h4 className='text-md m-0 p-0 font-medium dark:text-theme-white'>
@@ -60,6 +60,7 @@ const Page: FC<PageProps> = () => {
                 <button className='mb-7 whitespace-nowrap rounded-md border-[1px] px-8 py-3 duration-200 hover:bg-theme-btn hover:text-white sm:mb-0 sm:me-5 dark:border-theme-btn dark:text-theme-btn dark:hover:bg-white dark:hover:text-theme-dark-bg'>
                   Download Resume
                 </button>
+
                 <button className=' medium rounded-md border-[1px] bg-theme-btn px-5 py-3 text-white duration-200 hover:text-white dark:border-0 dark:hover:bg-white dark:hover:text-theme-dark-bg'>
                   {`Let's talk`}
                 </button>
@@ -98,6 +99,7 @@ const Page: FC<PageProps> = () => {
                   />
                 </svg>
               </Link>
+
               <Link href={'/'} className='group my-3 cursor-pointer'>
                 <svg
                   width='25'
@@ -113,6 +115,32 @@ const Page: FC<PageProps> = () => {
                   />
                 </svg>
               </Link>
+              <Link href={'/'} className='group mb-2.5 cursor-pointer'>
+                <svg
+                  width='30'
+                  height='30'
+                  viewBox='0 0 30 30'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M15 25C17.6522 25 20.1957 23.9464 22.0711 22.0711C23.9464 20.1957 25 17.6522 25 15C25 12.3478 23.9464 9.80429 22.0711 7.92893C20.1957 6.05357 17.6522 5 15 5C12.3478 5 9.80429 6.05357 7.92893 7.92893C6.05357 9.80429 5 12.3478 5 15C5 17.6522 6.05357 20.1957 7.92893 22.0711C9.80429 23.9464 12.3478 25 15 25ZM15 27.5C8.09625 27.5 2.5 21.9037 2.5 15C2.5 8.09625 8.09625 2.5 15 2.5C21.9037 2.5 27.5 8.09625 27.5 15C27.5 21.9037 21.9037 27.5 15 27.5Z'
+                    fill='#666666'
+                    className='duration-200 group-hover:fill-theme-btn dark:fill-theme-btn dark:group-hover:fill-white'
+                  />
+                  <path
+                    d='M18.4325 20.085V16.79H19.4725V21.1787H10.0812V16.79H11.1212V20.085H18.4325Z'
+                    fill='#666666'
+                    className='duration-200 group-hover:fill-theme-btn dark:fill-theme-btn dark:group-hover:fill-white'
+                  />
+                  <path
+                    d='M12.27 16.4775L17.3788 17.6L17.595 16.52L12.4863 15.3975L12.27 16.4775ZM12.945 13.92L17.6763 16.2363L18.1075 15.2413L13.3788 12.9125L12.9463 13.92H12.945ZM14.2575 11.4775L18.27 14.9863L18.9325 14.1488L14.92 10.6388L14.2575 11.4775ZM16.8513 8.8775L16.0138 9.53125L19.1213 13.935L19.9588 13.2813L16.8513 8.8775ZM12.1625 18.9775H17.3788V17.8838H12.1625V18.9775Z'
+                    fill='#666666'
+                    className='duration-200 group-hover:fill-theme-btn dark:fill-theme-btn dark:group-hover:fill-white'
+                  />
+                </svg>
+              </Link>
+
               <Link href={'/'} className='group cursor-pointer'>
                 <svg
                   width='25'
@@ -128,6 +156,7 @@ const Page: FC<PageProps> = () => {
                   />
                 </svg>
               </Link>
+
               <div className='mt-3 h-[35px] w-[1px] bg-theme-primary duration-200  dark:bg-theme-btn '></div>
             </div>
           </div>
@@ -357,9 +386,9 @@ const Page: FC<PageProps> = () => {
           </div>
 
           <div className='title-top-gap' id='my-tech-stack'>
-            <h1 className='title-txt'> My Tech Stack</h1>
+            <h1 className='title-txt'> My Tech Stacks</h1>
 
-            <div className='title-top-gap grid grid-cols-1 gap-8 lg:grid-cols-2'>
+            <div className='mt-[20px] grid grid-cols-1 gap-8 lg:mt-[30px] lg:grid-cols-2'>
               {techStacks.map((item: TechStack, index: number) => {
                 // define delay time for each node
                 const delayTime = Number('0.' + index * 0.22);
@@ -447,7 +476,7 @@ const Page: FC<PageProps> = () => {
           <h1 className='title-txt'> Projects</h1>
 
           <div>
-            <ul className='m-0 flex flex-wrap items-center justify-between p-0 sm:justify-start'>
+            <ul className='m-0 mt-4 flex flex-wrap items-center justify-between p-0 sm:justify-start'>
               <li>
                 <button
                   className={`tab-btn ${activeBtn === '0' ? 'active-btn' : 'dark:border-theme-primary'}`}
@@ -522,22 +551,23 @@ const Page: FC<PageProps> = () => {
                       />
                     </div>
                     <div className='px-5 pt-5'>
-                      <h2 className='m-0 p-0 text-xl font-medium dark:text-theme-dark-secondary'>
+                      <h2 className='m-0 p-0 text-xl font-medium capitalize lg:text-2xl dark:text-theme-dark-secondary'>
                         {item.name}
                       </h2>
                       <p className='break-words py-3 text-base text-theme-primary dark:text-theme-dark-secondary'>
                         {item.description}
                       </p>
 
-                      <div className='mb-3 flex flex-wrap text-[15px] dark:text-theme-dark-secondary'>
+                      <div className='mb-3 flex flex-wrap items-center text-[17px] dark:text-theme-dark-secondary'>
                         <span className='shrink-0 font-semibold'>
-                          {' '}
-                          Tech stack : &nbsp;
+                          Tech stacks : &nbsp;
                         </span>
                         {item.technology.map((tech, i: number) => {
+                          const isLastItem: boolean =
+                            item.technology?.length - 1 !== i;
                           return (
-                            <span key={i} className='text-[14px] font-thin'>
-                              {tech + ', '} &nbsp;
+                            <span key={i} className='text-[14px] font-medium'>
+                              {tech} {isLastItem ? ', ' : null} &nbsp;
                             </span>
                           );
                         })}
