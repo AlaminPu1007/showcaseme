@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const HeaderComponent = () => {
   // define local state
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
 
   const ref = useRef<HTMLUListElement | null>(null);
@@ -45,9 +45,9 @@ const HeaderComponent = () => {
   const openDrawerNav = () => setIsDrawerOpen((prv) => !prv);
 
   return (
-    <nav className='container pt-[20px]'>
+    <nav className='pt-[20px]'>
       {/* for drawer navigation only lg: 1024 screen size */}
-      <div className='relative py-[20px]'>
+      <div className='container relative py-[20px]'>
         <div className='nav-wrapper flex'>
           <Link
             href='/'
@@ -74,10 +74,10 @@ const HeaderComponent = () => {
                   className={`relative mt-2 flex h-[18px] w-[26px] cursor-pointer flex-col justify-between duration-300 ease-in`}
                 >
                   <span
-                    className={`delay-400 absolute top-0 inline h-[2px]  w-full bg-theme-primary duration-300 ease-in ${isDrawerOpen ? 'rotate-[45deg]' : 'rotate-[0deg]'}`}
+                    className={`delay-400 absolute top-0 inline h-[2px]  w-full bg-theme-primary duration-300 ease-in dark:bg-white dark:opacity-70 ${isDrawerOpen ? 'rotate-[45deg]' : 'rotate-[0deg]'}`}
                   ></span>
                   <span
-                    className={`delay-400 inline h-[2px]  w-full bg-theme-primary duration-300 ease-in ${isDrawerOpen ? 'rotate-[-45deg]' : 'rotate-[0deg]'}`}
+                    className={`delay-400 inline h-[2px]  w-full bg-theme-primary duration-300 ease-in dark:bg-white dark:opacity-70 ${isDrawerOpen ? 'rotate-[-45deg]' : 'rotate-[0deg]'}`}
                   ></span>
                 </button>
               </div>
@@ -118,7 +118,7 @@ const HeaderComponent = () => {
                 Contact
               </Link>
             </li>
-            <li className='text-xl max-[1024px]:mt-2 lg:ml-[20px]'>
+            <li className='text-xl max-[1024px]:mt-0 lg:ml-[20px]'>
               <button onClick={themeToggler}>
                 {isDarkMode ? (
                   <svg viewBox='0 0 24 24' fill='none' className='h-6 w-6'>
@@ -209,9 +209,9 @@ const HeaderComponent = () => {
               className='relative flex h-[18px] w-[26px] flex-col justify-between '
               onClick={openDrawerNav}
             >
-              <span className='inline h-[2px] w-full bg-theme-primary'></span>
-              <span className='inline h-[2px] w-full bg-theme-primary'></span>
-              <span className='inline h-[2px] w-full bg-theme-primary'></span>
+              <span className='inline h-[2px] w-full bg-theme-primary dark:bg-white dark:opacity-70'></span>
+              <span className='inline h-[2px] w-full bg-theme-primary dark:bg-white dark:opacity-70'></span>
+              <span className='inline h-[2px] w-full bg-theme-primary dark:bg-white dark:opacity-70'></span>
             </button>
           </div>
         ) : null}

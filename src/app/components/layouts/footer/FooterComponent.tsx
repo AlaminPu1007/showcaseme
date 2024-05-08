@@ -128,7 +128,7 @@ const FooterComponent = () => {
               </Link>
             </li>
           </ul>
-          <p className='mt-[25px] pb-1 text-center text-base text-theme-primary lg:mt-0 dark:text-theme-dark-primary'>
+          <p className='mt-[25px] pb-1 text-center text-sm text-theme-primary lg:mt-0 dark:text-theme-dark-primary'>
             Designed and built by{' '}
             <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
               Jon Doe
