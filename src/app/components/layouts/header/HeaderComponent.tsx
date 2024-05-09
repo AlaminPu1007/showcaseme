@@ -16,7 +16,7 @@ const HeaderComponent = () => {
     if (typeof window !== 'undefined') {
       const handleClickOutside = (event: Event) => {
         if (ref.current && !ref.current.contains(event.target as Node)) {
-          isDrawerOpen && setIsDrawerOpen(false);
+          if (isDrawerOpen) setIsDrawerOpen(false);
         }
       };
       document.addEventListener('click', handleClickOutside, true);

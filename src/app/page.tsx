@@ -414,54 +414,52 @@ const Page: FC<PageProps> = () => {
 
                     {/* render stack lists */}
                     <div className='grid grid-cols-2 gap-4 max-[460px]:grid-cols-1 sm:gap-x-14 md:grid-cols-2'>
-                      {item.stacks.map((stack: TechStackItem) => {
-                        return (
-                          <div className={`group flex`} key={stack.id}>
-                            <svg
-                              strokeWidth={0}
-                              viewBox='0 0 16 16'
-                              className='mt-[5px] shrink-0'
-                              height='1em'
-                              width='1em'
-                            >
-                              <path
-                                d='M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z'
-                                fill='#666666'
-                                className='duration-500 group-hover:fill-theme-btn dark:fill-theme-btn dark:group-hover:fill-white'
-                              />
-                            </svg>
-                            <div className='relative ms-3 pe-2'>
-                              {stack?.url ? (
-                                <Link
-                                  href={stack?.url}
-                                  target={'_blank'}
-                                  className={`relative m-0 block cursor-pointer break-words p-0 text-xl font-semibold text-theme-secondary underline duration-200 xl:whitespace-nowrap xl:break-normal dark:text-theme-dark-secondary`}
-                                >
-                                  {stack.name}
-                                </Link>
-                              ) : (
-                                <h1
-                                  className={`m-0 block cursor-auto p-0 text-xl font-semibold text-theme-secondary duration-200 dark:text-theme-dark-secondary`}
-                                >
-                                  {stack.name}
-                                </h1>
-                              )}
+                      {item.stacks.map((stack: TechStackItem) => (
+                        <div className={`group flex`} key={stack.id}>
+                          <svg
+                            strokeWidth={0}
+                            viewBox='0 0 16 16'
+                            className='mt-[5px] shrink-0'
+                            height='1em'
+                            width='1em'
+                          >
+                            <path
+                              d='M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z'
+                              fill='#666666'
+                              className='duration-500 group-hover:fill-theme-btn dark:fill-theme-btn dark:group-hover:fill-white'
+                            />
+                          </svg>
+                          <div className='relative ms-3 pe-2'>
+                            {stack?.url ? (
+                              <Link
+                                href={stack?.url}
+                                target={'_blank'}
+                                className={`relative m-0 block cursor-pointer break-words p-0 text-xl font-semibold text-theme-secondary underline duration-200 xl:whitespace-nowrap xl:break-normal dark:text-theme-dark-secondary`}
+                              >
+                                {stack.name}
+                              </Link>
+                            ) : (
+                              <h1
+                                className={`m-0 block cursor-auto p-0 text-xl font-semibold text-theme-secondary duration-200 dark:text-theme-dark-secondary`}
+                              >
+                                {stack.name}
+                              </h1>
+                            )}
 
-                              <small className='m-0 p-0 text-theme-primary dark:text-theme-dark-secondary'>
-                                {stack.expertise}
-                              </small>
-                              {stack.isFocusedAble ? (
-                                <span
-                                  className={`absolute right-[0%] top-1 flex items-center justify-center`}
-                                >
-                                  <span className='absolute inline-flex h-2 w-2 animate-ping rounded-full bg-sky-400 opacity-75'></span>
-                                  <span className='relative inline-flex h-1.5 w-1.5 rounded-full bg-pink-400'></span>
-                                </span>
-                              ) : null}
-                            </div>
+                            <small className='m-0 p-0 text-theme-primary dark:text-theme-dark-secondary'>
+                              {stack.expertise}
+                            </small>
+                            {stack.isFocusedAble ? (
+                              <span
+                                className={`absolute right-[0%] top-1 flex items-center justify-center`}
+                              >
+                                <span className='absolute inline-flex h-2 w-2 animate-ping rounded-full bg-sky-400 opacity-75'></span>
+                                <span className='relative inline-flex h-1.5 w-1.5 rounded-full bg-pink-400'></span>
+                              </span>
+                            ) : null}
                           </div>
-                        );
-                      })}
+                        </div>
+                      ))}
                     </div>
                   </motion.div>
                 );
