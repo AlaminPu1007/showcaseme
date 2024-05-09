@@ -4,6 +4,7 @@ Read more about it: https://dev.to/azadshukor/setting-up-nextjs-13-with-typescri
 */
 {
   "extends": [
+    "airbnb",
     "next/core-web-vitals",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",

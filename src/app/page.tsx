@@ -44,7 +44,7 @@ const Page: FC<PageProps> = () => {
   return (
     <>
       <section>
-        <div className='container my-[30px] duration-200 md:my-[50px]'>
+        <div className='container my-[30px] duration-200 md:my-[50px] '>
           <div className='item-center relative flex justify-center'>
             <div className='text-center'>
               <h5 className='text-md m-0 p-0 font-bold text-theme-dark-bg dark:text-white'>
@@ -79,7 +79,7 @@ const Page: FC<PageProps> = () => {
               </div>
             </div>
             {/* social icon goes here */}
-            <div className='absolute bottom-[40%] left-0 hidden flex-col items-center justify-between sm:flex'>
+            <div className='absolute bottom-[35%] left-0 hidden flex-col items-center justify-between sm:flex'>
               <div className='mb-3 h-[35px] w-[1px] bg-theme-primary duration-200  dark:bg-theme-btn '></div>
               <Link href='/' className='group cursor-pointer'>
                 <svg
