@@ -1,6 +1,7 @@
 /*
 Configure eslint for nextJs
 Read more about it: https://dev.to/azadshukor/setting-up-nextjs-13-with-typescript-eslint-47an
+Read about env : https://eslint.org/docs/latest/use/configure/language-options-deprecated#using-configuration-files
 */
 {
   "env": {
