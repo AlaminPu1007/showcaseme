@@ -81,7 +81,11 @@ const Page: FC<PageProps> = () => {
             {/* social icon goes here */}
             <div className='absolute bottom-[35%] left-0 hidden flex-col items-center justify-between sm:flex'>
               <div className='mb-3 h-[35px] w-[1px] bg-theme-primary duration-200  dark:bg-theme-btn '></div>
-              <Link href='/' className='group cursor-pointer'>
+              <Link
+                target='_blank'
+                href='https://github.com/AlaminPu1007'
+                className='group cursor-pointer'
+              >
                 <svg
                   width='24'
                   height='24'
@@ -100,7 +104,11 @@ const Page: FC<PageProps> = () => {
                 </svg>
               </Link>
 
-              <Link href={'/'} className='group my-3 cursor-pointer'>
+              <Link
+                target='_blank'
+                href={'https://twitter.com/Alamin66Sit'}
+                className='group my-3 cursor-pointer'
+              >
                 <svg
                   width='25'
                   height='25'
@@ -115,7 +123,11 @@ const Page: FC<PageProps> = () => {
                   />
                 </svg>
               </Link>
-              <Link href={'/'} className='group mb-2.5 cursor-pointer'>
+              <Link
+                target='_blank'
+                href={'https://stackoverflow.com/users/9572927/md-al-amin'}
+                className='group mb-2.5 cursor-pointer'
+              >
                 <svg
                   width='30'
                   height='30'
@@ -141,7 +153,11 @@ const Page: FC<PageProps> = () => {
                 </svg>
               </Link>
 
-              <Link href={'/'} className='group cursor-pointer'>
+              <Link
+                target='_blank'
+                href={'https://www.linkedin.com/in/md-alamin66/'}
+                className='group cursor-pointer'
+              >
                 <svg
                   width='25'
                   height='25'

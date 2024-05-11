@@ -14,14 +14,14 @@ const FooterComponent = () => (
 
         <div className=' ms-auto flex items-center duration-200'>
           <Link
-            href='mailto:alamin@gmail.com'
+            href='mailto:alamin66.sit@gmail.com'
             className='me-[48px] hidden border-b-[1px] border-[transparent] text-base text-theme-secondary duration-200 hover:border-b-[1px] hover:border-theme-secondary md:inline-block lg:text-lg dark:text-theme-dark-secondary dark:hover:border-theme-dark-secondary'
           >
             jondoe@gamil.com
           </Link>
 
           <Link
-            href='mailto:alamin@gmail.com'
+            href='mailto:alamin66.sit@gmail.com'
             className='group me-5 block cursor-pointer md:hidden'
           >
             <svg
@@ -41,7 +41,11 @@ const FooterComponent = () => (
             </svg>
           </Link>
 
-          <Link href='/' className='group me-4 cursor-pointer sm:me-5'>
+          <Link
+            href='https://github.com/AlaminPu1007'
+            target='_blank'
+            className='group me-4 cursor-pointer sm:me-5'
+          >
             <svg
               width='24'
               height='24'
@@ -59,7 +63,11 @@ const FooterComponent = () => (
               />
             </svg>
           </Link>
-          <Link href='/' className='group me-3 cursor-pointer sm:me-4'>
+          <Link
+            href='https://stackoverflow.com/users/9572927/md-al-amin'
+            target='_blank'
+            className='group me-3 cursor-pointer sm:me-4'
+          >
             <svg
               width='30'
               height='30'
@@ -85,7 +93,11 @@ const FooterComponent = () => (
             </svg>
           </Link>
 
-          <Link href={'/'} className='group me-4 cursor-pointer sm:me-5'>
+          <Link
+            href={'https://twitter.com/Alamin66Sit'}
+            target='_blank'
+            className='group me-4 cursor-pointer sm:me-5'
+          >
             <svg
               width='25'
               height='25'
@@ -100,7 +112,11 @@ const FooterComponent = () => (
               />
             </svg>
           </Link>
-          <Link href={'/'} className='group cursor-pointer'>
+          <Link
+            href={'https://www.linkedin.com/in/md-alamin66/'}
+            target='_blank'
+            className='group cursor-pointer'
+          >
             <svg
               width='25'
               height='25'
