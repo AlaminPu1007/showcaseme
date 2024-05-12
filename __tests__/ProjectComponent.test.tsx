@@ -3,7 +3,7 @@
  */
 'use client';
 
-import ProjectComponent from '@/app/components/layouts/home/ProjectComponent';
+import ProjectComponent from '@/app/components/home/ProjectComponent';
 import { projectsData } from '@/app/constant';
 import { render, screen } from '@testing-library/react';
 

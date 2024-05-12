@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 
-import HeroComponent from './components/layouts/home/HeroComponent';
-import AboutComponent from './components/layouts/home/AboutComponent';
-import ProjectComponent from './components/layouts/home/ProjectComponent';
+import HeroComponent from './components/home/HeroComponent';
+import AboutComponent from './components/home/AboutComponent';
+import ProjectComponent from './components/home/ProjectComponent';
 
 interface PageProps {}
 

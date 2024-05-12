@@ -2,7 +2,7 @@
  * validate or run a test case for dashboard hero section
  */
 
-import HeroComponent from '@/app/components/layouts/home/HeroComponent';
+import HeroComponent from '@/app/components/home/HeroComponent';
 import { fireEvent, render, screen } from '@testing-library/react';
 
 describe('run test for <HeroComponent />', () => {

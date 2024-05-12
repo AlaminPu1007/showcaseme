@@ -1,7 +1,7 @@
 /**
  * This will validate some predefined local json in application
  */
-import AboutComponent from '@/app/components/layouts/home/AboutComponent';
+import AboutComponent from '@/app/components/home/AboutComponent';
 import { techStacks, workExperience } from '@/app/constant';
 import { render, screen } from '@testing-library/react';
 
