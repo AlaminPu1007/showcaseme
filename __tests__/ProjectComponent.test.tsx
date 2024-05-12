@@ -1,7 +1,6 @@
 /**
  * Run test case for projects in dashboard
  */
-'use client';
 
 import ProjectComponent from '@/app/components/home/ProjectComponent';
 import { projectsData } from '@/app/constant';
