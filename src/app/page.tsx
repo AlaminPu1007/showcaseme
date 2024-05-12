@@ -212,6 +212,8 @@ const Page: FC<PageProps> = () => {
                     visible: { opacity: 1, y: 0 },
                     hidden: { opacity: 0, y: -50 },
                   }}
+                  // to validate in jest
+                  data-testid='work-experience-card'
                 >
                   <div className='flex shrink-0 items-center justify-between '>
                     <h3 className='m-0 p-0 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
@@ -423,6 +425,7 @@ const Page: FC<PageProps> = () => {
                       visible: { opacity: 1, scale: 1 },
                       hidden: { opacity: 0, scale: 0.85 },
                     }}
+                    data-testid='my-tech-stack'
                   >
                     <h3 className='my-4 mt-6 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
                       {item.title}
@@ -554,6 +557,7 @@ const Page: FC<PageProps> = () => {
                       visible: { opacity: 1, scale: 1 },
                       hidden: { opacity: 0, scale: 0.7 },
                     }}
+                    data-testid='project-data-id'
                   >
                     <div className='relative h-[260px] w-full overflow-hidden rounded-lg'>
                       <Image

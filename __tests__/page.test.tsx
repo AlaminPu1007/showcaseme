@@ -5,6 +5,7 @@
 
 import { fireEvent, render, screen } from '@testing-library/react';
 import Home from '@/app/page';
+import { projectsData, techStacks, workExperience } from '@/app/constant';
 
 // do setup once, for entire other test files also
 // initialize intersection observer
@@ -61,5 +62,47 @@ describe('Home', () => {
     const button2 = screen.getByRole('button', { name: "Let's talk" });
     // trigger button click event
     fireEvent.click(button2);
+  });
+
+  // Run test case to validate "WORK EXPERIENCE" objects
+  test('validate work experience', () => {
+    render(<Home />);
+    const workExperienceItem = screen.getAllByTestId('work-experience-card');
+    // check except behavior
+    expect(workExperienceItem).toHaveLength(workExperience.length);
+
+    // Assert that each card renders the correct content
+    workExperience.forEach((item) => {
+      // title must be greater than 1
+      expect(screen.getAllByText(item.title).length).toBeGreaterThan(1);
+      expect(screen.getAllByText(item.organizationName).length).toBeGreaterThan(
+        1
+      );
+      expect(screen.getAllByText(item.location).length).toBeGreaterThan(1);
+    });
+  });
+
+  // Run a test case that will validate of "MY TECH STACKS"
+  test('validate of tech stacks', () => {
+    render(<Home />);
+
+    // check renderer item and my predefined item has same length
+    const techElement = screen.getAllByTestId('my-tech-stack');
+    expect(techElement).toHaveLength(techStacks.length);
+
+    techStacks.forEach((item) => {
+      expect(screen.getByText(item.title)).toBeInTheDocument();
+    });
+  });
+
+  /** Run test case to validate projects */
+  it('validate of projects', () => {
+    render(<Home />);
+    const projectElement = screen.getAllByTestId('project-data-id');
+    expect(projectElement).toHaveLength(projectsData.length);
+
+    projectsData.forEach((item) => {
+      expect(screen.getAllByText(item.name).length).toBeGreaterThan(5);
+    });
   });
 });
