@@ -45,6 +45,7 @@ const FooterComponent = () => (
             href='https://github.com/AlaminPu1007'
             target='_blank'
             className='group me-4 cursor-pointer sm:me-5'
+            data-testid='github-link-item'
           >
             <svg
               width='24'

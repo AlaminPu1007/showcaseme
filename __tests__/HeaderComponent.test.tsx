@@ -31,4 +31,13 @@ describe('Header', () => {
     // trigger the event
     fireEvent.click(navItem);
   });
+
+  // check a link has specific href content
+  it('validate a link with given href', () => {
+    render(<Header />);
+    // get specific link by data-id
+    const getAboutLink = screen.getByRole('link', { name: 'About' });
+    // validate those node has valid github url
+    expect(getAboutLink).toHaveAttribute('href', '/#about-myself');
+  });
 });
