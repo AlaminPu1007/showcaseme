@@ -49,7 +49,7 @@ const ProjectComponent = () => {
             <button
               className={`tab-btn ${activeBtn === '1' ? 'active-btn' : 'dark:border-theme-primary'}`}
               onClick={() => {
-                filteredItem('1', 'frontend');
+                filteredItem('1', 'web');
               }}
             >
               Web
@@ -106,7 +106,7 @@ const ProjectComponent = () => {
                     alt='project-template-photo'
                     fill
                     priority
-                    className='rounded-t-lg object-cover duration-500 group-hover:scale-[1.01]'
+                    className='rounded-t-lg  duration-500 group-hover:scale-[1.01]'
                   />
                 </div>
                 <div className='px-5 pt-5'>
