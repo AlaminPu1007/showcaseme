@@ -221,6 +221,7 @@ export interface ProjectSchema {
   description: string;
   imgPath: string;
   technology: Array<string>;
+  rootStack: string | undefined;
 }
 export const projectsData: ProjectSchema[] = [
   {
@@ -240,6 +241,7 @@ export const projectsData: ProjectSchema[] = [
       'Material UI',
       'Mathjs',
     ],
+    rootStack: 'Next Js',
   },
   {
     id: '02',
@@ -249,8 +251,9 @@ export const projectsData: ProjectSchema[] = [
     liveUrl: 'https://mycvgenerator.com/',
     sourceCodeUrl: '',
     description:
-      'Led "Resumake" development, an online CV/Resume platform. Oversaw UI collaboration, managed project solo, integrated user input/templates. Achieved 100% development, boosting engagement by 30%, ensuring hassle-free CV/Resume creation.',
+      'Pioneered Resumake, an innovative CV/Resume platform, managing UI collaboration and solo project oversight. Integrated user input/templates, achieving 100% development and driving 30% engagement growth for effortless CV/Resume creation.',
     technology: ['React', 'NextJs', 'JavaScript', 'Redux Toolkit', 'Bootstrap'],
+    rootStack: 'Next Js',
   },
   {
     id: '03',
@@ -260,8 +263,9 @@ export const projectsData: ProjectSchema[] = [
     liveUrl: 'https://sisimpurvillage.com/',
     sourceCodeUrl: '',
     description:
-      'Revamped "Sisimpur" project, upgrading UI and integrating new APIs. Enhanced user experience by 70% and expanded educational content by 30%, making significant improvements to the platform.',
+      'Implemented a comprehensive overhaul of the "Sisimpur" project, enhancing UI and integrating new APIs. Significantly improved the user experience by 70% and expanded educational content by 30%, resulting in substantial platform enhancements.',
     technology: ['VueJs', 'NuxtJs', 'JavaScript', 'VueX'],
+    rootStack: 'Nuxt Js',
   },
   {
     id: '04',
@@ -273,6 +277,7 @@ export const projectsData: ProjectSchema[] = [
     description:
       'Transformed Spark Infrastructure into a dynamic e-commerce hub, leveraging jQuery, Bootstrap 5, HTML, SCSS, and CSS. Elevated user experience by 50%, optimizing performance and ensuring seamless navigation for a captivating online shopping journey.',
     technology: ['Jquery', 'Owl Carousel', 'Javascript', 'Bootstrap'],
+    rootStack: 'Jquery',
   },
   {
     id: '05',
@@ -291,6 +296,7 @@ export const projectsData: ProjectSchema[] = [
       'React Bootstrap',
       'react Apexcharts',
     ],
+    rootStack: 'React Js',
   },
   {
     id: '06',
@@ -300,8 +306,9 @@ export const projectsData: ProjectSchema[] = [
     imgPath: '/assets/retouching-labs.png',
     sourceCodeUrl: '',
     description:
-      "Enhanced Retouching Labs' platform with intuitive navigation and captivating page layouts, ensuring seamless interaction and visual appeal for global clientele.",
-    technology: ['Jquery', 'SwiperJs', 'Javascript', 'Bootstrap', 'SCSS'],
+      "Revamped Retouching Labs' platform with intuitive navigation and captivating page layouts, resulting in a 20% increase in user engagement and satisfaction among our diverse global clientele. Elevated visual appeal ensures seamless interaction and satisfaction",
+    technology: ['Jquery', 'SwiperJs', 'SCSS', 'Javascript', 'Bootstrap'],
+    rootStack: 'Jquery',
   },
   {
     id: '08',
@@ -313,6 +320,7 @@ export const projectsData: ProjectSchema[] = [
     description:
       "Elevated Burkina's admin web UI with intuitive authentication page design, ensuring seamless access to comprehensive news coverage for users worldwide",
     technology: ['Jquery', 'Javascript', 'Bootstrap', 'SCSS'],
+    rootStack: 'Jquery',
   },
   {
     id: '15',
@@ -324,6 +332,7 @@ export const projectsData: ProjectSchema[] = [
     description:
       'Crafted an immersive React.js e-commerce web app with robust authentication features, ensuring secure and seamless online shopping experiences for users',
     technology: ['React', 'Context Api', 'NodeJs', 'ExpressJs', 'MySql'],
+    rootStack: 'React Js',
   },
   {
     id: '09',
@@ -333,8 +342,9 @@ export const projectsData: ProjectSchema[] = [
     liveUrl: 'https://riseupcrm.com/',
     sourceCodeUrl: '',
     description:
-      'Revolutionized Vue.js CRM frontend, optimizing resource management with intuitive design, ensuring seamless company operations and productivity.',
+      'Revolutionized Vue.js CRM frontend, optimizing resource management with intuitive design, ensuring seamless company operations, and boosting productivity.',
     technology: ['Vue', 'Bootstrap', 'SASS', 'Html', 'CSS'],
+    rootStack: 'Vue Js',
   },
   {
     id: '07',
@@ -344,8 +354,9 @@ export const projectsData: ProjectSchema[] = [
     imgPath: '/assets/hotel-books.png',
     sourceCodeUrl: 'https://github.com/AlaminPu1007/Dcastalia',
     description:
-      'Developed a sleek hotel management application, seamlessly integrating API requests and showcasing data using Swiper JS for an engaging user experience.',
+      'Engineered a sophisticated hotel management application, seamlessly weaving API integrations and leveraging Swiper JS for an immersive user journey. Delivered a seamless experience, effortlessly guiding users through a wealth of information.',
     technology: ['React', 'SwiperJs', 'JavaScript', 'SASS'],
+    rootStack: 'React Js',
   },
   {
     id: '10',
@@ -365,6 +376,7 @@ export const projectsData: ProjectSchema[] = [
       'ExpressJS',
       'Socket Io',
     ],
+    rootStack: 'React Native',
   },
   {
     id: '11',
@@ -383,6 +395,7 @@ export const projectsData: ProjectSchema[] = [
       'Adonis Js',
       'Context API',
     ],
+    rootStack: 'React Native',
   },
   {
     id: '12',
@@ -394,6 +407,7 @@ export const projectsData: ProjectSchema[] = [
     description:
       'Designed for kids to learn alphabets (e.g., Bangla Sarborno, Banjonborno, Arabic, English) with engaging music. Encourages interactive learning through fun, educational experiences.',
     technology: ['React Native', 'React Navigation', 'React-Native-Sound'],
+    rootStack: 'React Native',
   },
   {
     id: '13',
@@ -411,6 +425,7 @@ export const projectsData: ProjectSchema[] = [
       'React Native SVG Charts',
       'Redux',
     ],
+    rootStack: 'React Native',
   },
   {
     id: '14',
@@ -428,6 +443,7 @@ export const projectsData: ProjectSchema[] = [
       'React Navigation',
       'redux Toolkit',
     ],
+    rootStack: 'React Native',
   },
   {
     id: '16',
@@ -439,6 +455,7 @@ export const projectsData: ProjectSchema[] = [
     description:
       'Discover countries worldwide through this React Native app, powered by the Rest Countries API. Explore flags, populations, languages, currencies, and more in a user-friendly interface',
     technology: ['React', 'Jest', 'React Native Reanimated'],
+    rootStack: 'React Native',
   },
   {
     id: '17',
@@ -451,6 +468,7 @@ export const projectsData: ProjectSchema[] = [
     description:
       'Crafted an immersive React.js e-commerce web app with robust authentication features, ensuring secure and seamless online shopping experiences for users',
     technology: ['NodeJs', 'ExpressJs', 'MySql'],
+    rootStack: 'Express JS',
   },
   {
     id: '18',
@@ -461,18 +479,20 @@ export const projectsData: ProjectSchema[] = [
     sourceCodeUrl:
       'https://github.com/AlaminPu1007/AdonisJs/tree/master/FirstProject',
     description:
-      'Developed a simple CRUD application using Adonis.js, facilitating basic Create, Read, Update, and Delete operations.',
+      'Built a versatile CRUD app with Adonis.js, enabling effortless Create, Read, Update, and Delete operations for streamlined data management.',
     technology: ['NodeJs', 'AdonisJs', 'MySql'],
+    rootStack: 'Adonis JS',
   },
   {
     id: '19',
     name: 'Express CRUD',
     type: 'backend',
-    imgPath: '/assets/express-js.png',
+    imgPath: '/assets/express-js.jpg',
     liveUrl: '',
     sourceCodeUrl: 'https://github.com/AlaminPu1007/CRUD-Application',
     description:
       'Developed a simple CRUD application using Express.js, facilitating basic Create, Read, Update, and Delete operations.',
     technology: ['NodeJs', 'ExpressJs', 'Mongoose'],
+    rootStack: 'Express JS',
   },
 ];
