@@ -76,7 +76,7 @@ const ProjectComponent = () => {
             </button>
           </li>
         </ul>
-        <div className='mt-[40px] grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3'>
+        <div className='mt-[40px] grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3'>
           {data.map((item: ProjectSchema, index: number) => {
             // define delay time for each node
             const delayTime = Number('0.' + index * 0.22);
@@ -106,7 +106,8 @@ const ProjectComponent = () => {
                     alt='project-template-photo'
                     fill
                     priority
-                    className='rounded-t-lg  duration-500 group-hover:scale-[1.01]'
+                    sizes='100%'
+                    className='rounded-t-lg object-cover object-top duration-500 group-hover:scale-[1.01]'
                   />
                 </div>
                 <div className='px-5 pt-5'>
