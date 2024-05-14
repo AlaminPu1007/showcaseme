@@ -15,14 +15,14 @@ const FooterComponent = () => (
         <div className=' ms-auto flex items-center duration-200'>
           <Link
             href='mailto:alamin66.sit@gmail.com'
-            className='me-[48px] hidden border-b-[1px] border-[transparent] text-base text-theme-secondary duration-200 hover:border-b-[1px] hover:border-theme-secondary md:inline-block lg:text-lg dark:text-theme-dark-secondary dark:hover:border-theme-dark-secondary'
+            className='after-hover-animation relative mb-[2px] me-[40px] hidden text-base text-theme-secondary duration-200 md:inline-block lg:text-lg dark:text-theme-dark-secondary'
           >
-            jondoe@gamil.com
+            alamin66.sit@gmail.com
           </Link>
 
           <Link
             href='mailto:alamin66.sit@gmail.com'
-            className='group me-5 block cursor-pointer md:hidden'
+            className='group me-[25px] block cursor-pointer md:hidden'
           >
             <svg
               width='26'

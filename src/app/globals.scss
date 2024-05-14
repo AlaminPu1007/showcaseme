@@ -79,6 +79,11 @@
   @apply border-theme-btn text-theme-btn dark:border-theme-btn;
 }
 
+// after effect with animation
+.after-hover-animation {
+  @apply after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-theme-secondary after:duration-200 hover:after:w-[100%] dark:after:bg-theme-dark-secondary;
+}
+
 // footer styles goes here
 .footer-nav-link {
   @apply relative inline-block px-1 pb-1 text-base text-theme-secondary  duration-300  after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-theme-secondary after:duration-300 hover:after:w-full lg:text-lg dark:text-theme-dark-secondary dark:after:bg-theme-white;
