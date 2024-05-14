@@ -431,7 +431,7 @@ export const projectsData: ProjectSchema[] = [
     id: '14',
     name: 'Kids Video Player',
     type: 'mobile',
-    imgPath: '/assets/enosisi-crm.png',
+    imgPath: '/assets/kids-player.png',
     liveUrl: '',
     sourceCodeUrl: 'https://github.com/AlaminPu1007/kids-video-player',
     description:

@@ -29,8 +29,8 @@ const HeroComponent = () => {
             <div className='border-gradient relative h-[280px] w-[280px] overflow-hidden rounded-full sm:h-[350px] sm:w-[350px]'>
               <Image
                 alt='user-avatar'
-                // src={'https://i.stack.imgur.com/I4fiW.jpg?s=256&g=1'}
-                src={'/assets/profile-img/02.jpg'}
+                src={'https://i.stack.imgur.com/I4fiW.jpg?s=256&g=1'}
+                // src={'/assets/profile-img/02.jpg'}
                 fill={true}
                 sizes='100%'
                 className='object-cover object-center'
