@@ -14,8 +14,8 @@ export const workExperience: WorkExperience[] = [
   {
     id: 1,
     title: 'SOFTWARE ENGINEER',
-    organizationName: 'Dr. Rajkumar’s Learning App',
-    location: 'Oxford University',
+    organizationName: 'Riseup Labs',
+    location: 'Uttara-3, Dhaka, Bangladesh',
     workDuration: 'Sep 2021 - Present',
     type: 'Full Time',
   },
