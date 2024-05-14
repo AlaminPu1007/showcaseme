@@ -4,6 +4,7 @@ import './globals.scss';
 import HeaderComponent from './components/layouts/header/HeaderComponent';
 import FooterComponent from './components/layouts/footer/FooterComponent';
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -28,7 +29,10 @@ export default function RootLayout({
           ${poppins.className} bg-[#f5f7fe] ease-in dark:bg-theme-dark-bg dark:bg-[url('../../public/assets/bg-image.png')]`}
       >
         <HeaderComponent />
-        <main>{children}</main>
+        <main>
+          {children}
+          <Analytics />
+        </main>
         <FooterComponent />
       </body>
     </html>

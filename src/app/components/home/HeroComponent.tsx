@@ -26,13 +26,14 @@ const HeroComponent = () => {
             </button>
           </div>
           <div className='item-center flex shrink-[0] justify-center'>
-            <div className='border-gradient overflow-hidden rounded-full'>
+            <div className='border-gradient relative h-[280px] w-[280px] overflow-hidden rounded-full sm:h-[350px] sm:w-[350px]'>
               <Image
                 alt='user-avatar'
-                src={'https://i.stack.imgur.com/I4fiW.jpg?s=256&g=1'}
-                width={350}
-                height={350}
-                className='object-cover'
+                // src={'https://i.stack.imgur.com/I4fiW.jpg?s=256&g=1'}
+                src={'/assets/profile-img/02.jpg'}
+                fill={true}
+                sizes='100%'
+                className='object-cover object-center'
                 priority
               />
             </div>
