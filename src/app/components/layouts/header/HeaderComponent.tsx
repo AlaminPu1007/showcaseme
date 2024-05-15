@@ -51,9 +51,10 @@ const HeaderComponent = () => {
         <div className='nav-wrapper flex'>
           <Link
             href='/'
-            className='bg-custom-gradient bg-clip-text pr-4 text-4xl text-transparent md:pr-0'
+            // className='bg-custom-gradient bg-clip-text pr-4 text-4xl font-bold tracking-wider text-transparent md:pr-0'
+            className='m-0 flex items-center p-0 pr-4 text-center text-3xl font-semibold tracking-wider text-theme-secondary sm:text-4xl md:pr-0 dark:text-white'
           >
-            Jon Doe
+            ALAMIN
           </Link>
 
           <ul
@@ -64,11 +65,11 @@ const HeaderComponent = () => {
             <li className='flex items-center justify-between lg:hidden'>
               <Link
                 href='/'
-                className={`mb-3 bg-custom-gradient bg-clip-text pr-4 text-4xl text-transparent md:pr-0 `}
+                className={`mb-3 pr-4 text-3xl font-semibold tracking-wider text-theme-secondary sm:text-4xl md:pr-0 dark:text-white`}
               >
-                Jon Doe
+                ALAMIN
               </Link>
-              <div className='top-13 absolute right-3 block lg:hidden'>
+              <div className='absolute right-3 top-9 block lg:hidden'>
                 <button
                   onClick={openDrawerNav}
                   className={`relative mt-2 flex h-[18px] w-[26px] cursor-pointer flex-col justify-between duration-300 ease-in`}

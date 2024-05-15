@@ -9,7 +9,7 @@ const FooterComponent = () => (
           href='/'
           className='pr-2 text-2xl text-theme-secondary sm:pr-4 sm:text-4xl md:pr-0 dark:text-theme-dark-primary'
         >
-          Jon Doe
+          Alamin
         </Link>
 
         <div className=' ms-auto flex items-center duration-200'>
@@ -173,7 +173,7 @@ const FooterComponent = () => (
         <p className='mt-[25px] pb-1 text-center text-sm text-theme-primary lg:mt-0 dark:text-theme-dark-primary'>
           Designed and built by{' '}
           <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
-            Jon Doe
+            Alamin
           </span>
           &nbsp;with&nbsp;
           <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>

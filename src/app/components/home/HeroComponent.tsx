@@ -11,29 +11,32 @@ const HeroComponent = () => {
             {`Hello 👋, I'am`}
           </h5>
           <h1 className='m-0 p-0 py-3 text-4xl font-bold tracking-[.06em] text-theme-secondary lg:text-5xl dark:text-white'>
-            Jon Doe
+            Md Alamin
           </h1>
-          <h4 className='text-md m-0 p-0 font-medium dark:text-theme-white'>
-            Business development
+          <h4 className='text-md m-0 p-0 font-medium tracking-wide dark:text-theme-white'>
+            Software Engineer
           </h4>
           <div className='item-center my-8  flex flex-col justify-center sm:flex-row'>
             <button className='mb-7 whitespace-nowrap rounded-md border-[1px] px-8 py-3 duration-200 hover:bg-theme-btn hover:text-white sm:mb-0 sm:me-5 dark:border-theme-btn dark:text-theme-btn dark:hover:bg-white dark:hover:text-theme-dark-bg'>
               Download Resume
             </button>
 
-            <button className=' medium rounded-md border-[1px] bg-theme-btn px-5 py-3 text-white duration-200 hover:text-white dark:border-0 dark:hover:bg-white dark:hover:text-theme-dark-bg'>
+            <Link
+              href={'/#footer-widget'}
+              className='medium inline-block rounded-md border-[1px] bg-theme-btn px-5 py-3 text-white duration-200 hover:text-white dark:border-0 dark:hover:bg-white dark:hover:text-theme-dark-bg'
+            >
               {`Let's talk`}
-            </button>
+            </Link>
           </div>
           <div className='item-center flex shrink-[0] justify-center'>
-            <div className='border-gradient relative h-[280px] w-[280px] overflow-hidden rounded-full sm:h-[350px] sm:w-[350px]'>
+            <div className='relative h-[280px] w-[280px] overflow-hidden rounded-full border-[0.5px] border-theme-white sm:h-[350px] sm:w-[350px] dark:border-theme-white'>
               <Image
                 alt='user-avatar'
-                src={'https://i.stack.imgur.com/I4fiW.jpg?s=256&g=1'}
-                // src={'/assets/profile-img/02.jpg'}
+                // src={'https://i.stack.imgur.com/I4fiW.jpg?s=256&g=1'}
+                src={'/assets/profile-img/02.jpg'}
                 fill={true}
                 sizes='100%'
-                className='object-cover object-center'
+                className='object-cover object-center '
                 priority
               />
             </div>
