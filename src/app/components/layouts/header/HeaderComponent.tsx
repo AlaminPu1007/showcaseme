@@ -44,6 +44,13 @@ const HeaderComponent = () => {
    */
   const openDrawerNav = () => setIsDrawerOpen((prv) => !prv);
 
+  /**
+   * description :- In mobile view if drawer is already opened, then need to close it
+   * @created_by :- {ALAMIN}
+   * @created_at :- 15/05/2024 20:11:15
+   */
+  const onCloseDrawerNav = () => (isDrawerOpen ? setIsDrawerOpen(false) : null);
+
   return (
     <nav className='pt-[5px] lg:pt-[20px]'>
       {/* for drawer navigation only lg: 1024 screen size */}
@@ -66,6 +73,7 @@ const HeaderComponent = () => {
               <Link
                 href='/'
                 className={`mb-3 pr-4 text-3xl font-semibold tracking-wider text-theme-secondary sm:text-4xl md:pr-0 dark:text-white`}
+                onClick={onCloseDrawerNav}
               >
                 ALAMIN
               </Link>
@@ -87,17 +95,26 @@ const HeaderComponent = () => {
               <Link
                 href='/'
                 className={`nav-list-item-link dark:hover:bg-initial text-center dark:hover:text-theme-dark-primary`}
+                onClick={onCloseDrawerNav}
               >
                 Home
               </Link>
             </li>
             <li className='lg:lg:mx-2'>
-              <Link href='/#about-myself' className='nav-list-item-link '>
+              <Link
+                href='/#about-myself'
+                className='nav-list-item-link'
+                onClick={onCloseDrawerNav}
+              >
                 About
               </Link>
             </li>
             <li className='lg:mx-2'>
-              <Link href='/#my-tech-stack' className='nav-list-item-link'>
+              <Link
+                href='/#my-tech-stack'
+                className='nav-list-item-link'
+                onClick={onCloseDrawerNav}
+              >
                 Tech Stack
               </Link>
             </li>
@@ -105,17 +122,26 @@ const HeaderComponent = () => {
               <Link
                 href='/#my-personal-projects'
                 className='nav-list-item-link'
+                onClick={onCloseDrawerNav}
               >
                 Projects
               </Link>
             </li>
             <li className='lg:mx-2'>
-              <Link href='/blog' className='nav-list-item-link'>
+              <Link
+                href='/blog'
+                className='nav-list-item-link'
+                onClick={onCloseDrawerNav}
+              >
                 Blog
               </Link>
             </li>
             <li className='lg:mx-2'>
-              <Link href='/#footer-widget' className='nav-list-item-link'>
+              <Link
+                href='/#footer-widget'
+                className='nav-list-item-link'
+                onClick={onCloseDrawerNav}
+              >
                 Contact
               </Link>
             </li>
