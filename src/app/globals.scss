@@ -48,7 +48,7 @@
 */
 
 .navbar {
-  @apply fixed list-none flex-col duration-200 ease-in max-[1023px]:left-0 max-[1023px]:top-0 max-[1023px]:h-[100vh] max-[1023px]:w-[350px] max-[1023px]:bg-white max-[1023px]:px-4 max-[1023px]:pt-10 max-[1023px]:shadow-[0_8px_30px_rgb(0,0,0,0.12)] lg:static lg:ml-auto lg:flex lg:flex-row lg:flex-wrap lg:items-center dark:max-[1023px]:bg-theme-dark-bg;
+  @apply fixed list-none flex-col duration-200 ease-in max-[1023px]:left-0 max-[1023px]:top-0 max-[1023px]:h-[100vh] max-[1023px]:w-[350px] max-[1023px]:bg-white max-[1023px]:px-4 max-[1023px]:pt-[25px] max-[1023px]:shadow-[0_8px_30px_rgb(0,0,0,0.12)] lg:static lg:ml-auto lg:flex lg:flex-row lg:flex-wrap lg:items-center dark:max-[1023px]:bg-theme-dark-bg;
 }
 
 // .nav-list-item-link {
@@ -60,7 +60,7 @@
 }
 
 .title-txt {
-  @apply m-0 p-0 py-3 text-3xl font-bold uppercase tracking-[.02em] text-theme-secondary dark:text-white;
+  @apply m-0 p-0 py-3 text-[1.55rem] font-bold uppercase tracking-[.02em] text-theme-secondary sm:text-3xl dark:text-white;
 }
 
 .section-top-gap {

@@ -17,19 +17,18 @@ const AboutComponent = () => {
       <div id='about-myself'>
         <h1 className='title-txt'>About Me</h1>
         <p className='m-0 mt-3 break-words p-0 text-lg text-theme-primary dark:text-theme-dark-primary'>
-          The Generator App is an online tool that helps you to export
-          ready-made templates ready to work as your future website. It helps
-          you to combine slides, panels and other components and export it as a
-          set of static files: HTML/CSS/JS
+          {
+            "Experienced software engineer proficient in both frontend and backend development, with a specialization in mobile application development using React Native. With over 4+ years of hands-on experience, I've built a strong foundation in JavaScript and its frameworks, including ReactJs and NodeJs, while also crafting scalable backend solutions with ExpressJs. Having solved over 700+ problems on platforms like LeetCode and UVa, I'm now seeking to join a dynamic development team where I can leverage my diverse skill set to contribute to the creation of innovative and impactful projects "
+          }
         </p>
       </div>
 
       <div className='title-top-gap'>
-        <h1 className='title-txt break-words'>{`Work Experience (0+ Years)`}</h1>
+        <h1 className='title-txt break-words'>{`Work Experience (4+ Years)`}</h1>
 
         {workExperience?.map((item: WorkExperience, index: number) => {
           // define delay time for each node
-          const delayTime = Number('0.' + index + 1 * 2);
+          const delayTime = Number('0.' + index * 2);
 
           return (
             <motion.div
@@ -149,7 +148,7 @@ const AboutComponent = () => {
             <h3 className='m-0 p-0 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
               Bachelor in Computer Science and Engineering
             </h3>
-            <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-medium text-[#01AE13]  dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
+            <p className='m-0 ms-6 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-medium text-[#01AE13] sm:ms-0 sm:px-5  dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
               Full Time
             </p>
           </div>

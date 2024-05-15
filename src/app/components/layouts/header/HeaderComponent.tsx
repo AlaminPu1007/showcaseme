@@ -45,7 +45,7 @@ const HeaderComponent = () => {
   const openDrawerNav = () => setIsDrawerOpen((prv) => !prv);
 
   return (
-    <nav className='pt-[20px]'>
+    <nav className='pt-[5px] lg:pt-[20px]'>
       {/* for drawer navigation only lg: 1024 screen size */}
       <div className='container relative py-[20px]'>
         <div className='nav-wrapper flex'>
