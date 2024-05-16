@@ -145,7 +145,7 @@ const HeaderComponent = () => {
                 Contact
               </Link>
             </li>
-            <li className='text-xl max-[1024px]:mt-0 lg:ml-[20px]'>
+            <li className='hidden text-xl max-[1024px]:mt-0 lg:ml-[20px] lg:block'>
               <button onClick={themeToggler}>
                 {isDarkMode ? (
                   <svg viewBox='0 0 24 24' fill='none' className='h-6 w-6'>
