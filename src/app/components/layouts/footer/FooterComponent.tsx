@@ -172,17 +172,10 @@ const FooterComponent = () => (
         </ul>
         <p className='mt-[25px] pb-1 text-center text-sm text-theme-primary lg:mt-0 dark:text-theme-dark-primary'>
           Designed and built by{' '}
-          <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
-            Alamin
-          </span>
+          <span className='footer-txt-gradient'>Alamin</span>
           &nbsp;with&nbsp;
-          <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
-            Love{' '}
-          </span>{' '}
-          &{' '}
-          <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
-            Coffee
-          </span>
+          <span className='footer-txt-gradient'>Love </span> &{' '}
+          <span className='footer-txt-gradient'>Coffee</span>
         </p>
       </div>
     </div>

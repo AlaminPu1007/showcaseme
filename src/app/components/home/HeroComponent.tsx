@@ -17,9 +17,13 @@ const HeroComponent = () => {
             Software Engineer
           </h4>
           <div className='item-center my-8  flex flex-col justify-center sm:flex-row'>
-            <button className='mb-7 whitespace-nowrap rounded-md border-[1px] px-8 py-3 duration-200 hover:bg-theme-btn hover:text-white sm:mb-0 sm:me-5 dark:border-theme-btn dark:text-theme-btn dark:hover:bg-white dark:hover:text-theme-dark-bg'>
+            <a
+              href={'/assets/resume/alamin.pdf'}
+              download={true}
+              className='mb-7 whitespace-nowrap rounded-md border-[1px] px-8 py-3 duration-200 hover:bg-theme-btn hover:text-white sm:mb-0 sm:me-5 dark:border-theme-btn dark:text-theme-btn dark:hover:bg-white dark:hover:text-theme-dark-bg'
+            >
               Download Resume
-            </button>
+            </a>
 
             <Link
               href={'/#footer-widget'}
