@@ -5,6 +5,7 @@ import HeaderComponent from './components/layouts/header/HeaderComponent';
 import FooterComponent from './components/layouts/footer/FooterComponent';
 import React from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import Script from 'next/script';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -35,6 +36,12 @@ export default function RootLayout({
         </main>
         <FooterComponent />
       </body>
+      <Script
+        async
+        defer
+        src='https://cloud.umami.is/script.js'
+        data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || ''}
+      />
     </html>
   );
 }
