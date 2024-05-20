@@ -168,6 +168,7 @@ const ProjectComponent = () => {
                           href={item.liveUrl}
                           className={`ms-2 block text-base tracking-[0.019rem] underline duration-200 hover:text-[#0D3C9F] dark:text-white dark:hover:text-theme-btn`}
                           target='_blank'
+                          data-umami-event={`projects-${item.name} Live Preview`}
                         >
                           Live Preview
                         </Link>
@@ -208,6 +209,7 @@ const ProjectComponent = () => {
                           href={item.sourceCodeUrl}
                           className='ms-2 block text-base tracking-[0.019rem] underline duration-200 hover:text-[#0D3C9F] dark:text-white dark:hover:text-theme-btn'
                           target='_blank'
+                          data-umami-event={`projects-${item.name} View Code`}
                         >
                           View Code
                         </Link>

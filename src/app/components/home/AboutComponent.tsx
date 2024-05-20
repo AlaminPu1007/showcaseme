@@ -286,6 +286,7 @@ const AboutComponent = () => {
                             href={stack?.url}
                             target={'_blank'}
                             className={`relative m-0 block cursor-pointer break-words p-0 text-xl font-semibold text-theme-secondary underline duration-200 xl:whitespace-nowrap xl:break-normal dark:text-theme-dark-secondary`}
+                            data-umami-event={`button-${stack.name}`}
                           >
                             {stack.name}
                           </Link>

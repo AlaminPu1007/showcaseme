@@ -54,6 +54,7 @@ const HeroComponent = () => {
             target='_blank'
             href='https://github.com/AlaminPu1007'
             className='group cursor-pointer'
+            data-umami-event={`button-github-from-hero-section`}
           >
             <svg
               width='24'

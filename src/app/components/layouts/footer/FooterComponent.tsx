@@ -46,6 +46,7 @@ const FooterComponent = () => (
             target='_blank'
             className='group me-4 cursor-pointer sm:me-5'
             data-testid='github-link-item'
+            data-umami-event={`button-github-from-footer-section`}
           >
             <svg
               width='24'
