@@ -13,6 +13,11 @@
     "test": "jest",
     "test:watch": "jest --watch"
   },
+  "author": {
+    "name": "Md. Alamin",
+    "email": "alamin66.sit@gmail.com",
+    "url": "https://showcase-alamin.vercel.app/"
+  },
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
     "framer-motion": "^11.1.9",
