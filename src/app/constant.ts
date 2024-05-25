@@ -302,7 +302,7 @@ export const projectsData: ProjectSchema[] = [
     id: '06',
     name: 'Retouching',
     type: 'web',
-    liveUrl: 'retouchinglabs',
+    liveUrl: 'https://retouchinglabs.com',
     imgPath: '/assets/retouching-labs.png',
     sourceCodeUrl: '',
     description:
