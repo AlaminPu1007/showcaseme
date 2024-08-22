@@ -108,6 +108,8 @@ const ProjectComponent = () => {
                     priority
                     sizes='100%'
                     className='rounded-t-lg object-cover object-top duration-500 group-hover:scale-[1.01]'
+                    placeholder='blur'
+                    blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN89R8AAtkB6zy+wn8AAAAASUVORK5CYII='
                   />
                   <span className='text-md absolute left-[-8%] top-[11%] block w-[40%] rotate-[-45deg] bg-theme-btn text-center text-white'>
                     {item.rootStack}

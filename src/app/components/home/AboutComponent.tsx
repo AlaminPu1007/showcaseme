@@ -18,9 +18,14 @@ const AboutComponent = () => {
         <h1 className='title-txt'>About Me</h1>
         <p className='m-0 mt-3 break-words p-0 text-lg text-theme-primary dark:text-theme-dark-primary'>
           {
-            "Experienced software engineer proficient in both frontend and backend development, with a specialization in mobile application development using React Native. With over 4+ years of hands-on experience, I've built a strong foundation in JavaScript and its frameworks, including ReactJs and NodeJs, while also crafting scalable backend solutions with ExpressJs. Having solved over 700+ problems on platforms like LeetCode and UVa, I'm now seeking to join a dynamic development team where I can leverage my diverse skill set to contribute to the creation of innovative and impactful projects "
+            "I'm a 26-year-old software engineer with 4+ years of experience in web technology, specializing in JavaScript, React.js (Next.js), and problem-solving. I am passionate about creating high-performance web applications and continuously improving my skills in modern web development technologies."
           }
         </p>
+        {/* <p className='m-0 mt-3 break-words p-0 text-lg text-theme-primary dark:text-theme-dark-primary'>
+          {
+            "Experienced software engineer proficient in both frontend and backend development, with a specialization in mobile application development using React Native. With over 4+ years of hands-on experience, I've built a strong foundation in JavaScript and its frameworks, including ReactJs and NodeJs, while also crafting scalable backend solutions with ExpressJs. Having solved over 700+ problems on platforms like LeetCode and UVa, I'm now seeking to join a dynamic development team where I can leverage my diverse skill set to contribute to the creation of innovative and impactful projects "
+          }
+        </p> */}
       </div>
 
       <div className='title-top-gap'>

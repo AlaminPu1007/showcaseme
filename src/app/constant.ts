@@ -222,8 +222,27 @@ export interface ProjectSchema {
   imgPath: string;
   technology: Array<string>;
   rootStack: string | undefined;
-}
+} //qa-brains.png
 export const projectsData: ProjectSchema[] = [
+  {
+    id: '20',
+    name: 'QA Brains',
+    imgPath: '/assets/qa-brains.png',
+    type: 'web',
+    liveUrl: 'https://qabrains.com/',
+    sourceCodeUrl: '',
+    description:
+      'Imagine a place where every question you have about QA gets an answer. That’s QA Brains for you! Created by Riseup Labs, we aim to transform how people learn about and engage with QA topics',
+    technology: [
+      'ReactJs',
+      'NextJs',
+      'JavaScript',
+      'Redux',
+      'Bootstrap',
+      'Quill Editor',
+    ],
+    rootStack: 'Next Js',
+  },
   {
     id: '01',
     name: 'My Learning 101',

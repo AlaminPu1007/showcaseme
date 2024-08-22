@@ -14,7 +14,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Alamin's Portfolio Showcase",
-  description: "A curated collection of projects and work by Alamin's",
+  description: 'A curated collection of projects and work by Alamin',
 };
 
 export default function RootLayout({

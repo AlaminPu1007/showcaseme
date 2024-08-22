@@ -43,6 +43,8 @@ const HeroComponent = () => {
                 sizes='100%'
                 className='object-cover object-center '
                 priority
+                placeholder='blur'
+                blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN89R8AAtkB6zy+wn8AAAAASUVORK5CYII='
               />
             </div>
           </div>
