@@ -132,7 +132,7 @@ const HeaderComponent = () => {
                 href='/blog'
                 className='nav-list-item-link'
                 onClick={onCloseDrawerNav}
-                data-umami-event={`button-blog-link`}
+                // data-umami-event={`button-blog-link`}
               >
                 Blog
               </Link>
