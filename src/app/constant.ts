@@ -144,7 +144,7 @@ export const techStacks: TechStack[] = [
       },
       {
         id: '206',
-        name: 'LeetCode (500+)',
+        name: 'LeetCode (700+)',
         expertise: 'Experienced',
         url: 'https://leetcode.com/u/alamin66/',
         isFocusedAble: true,
