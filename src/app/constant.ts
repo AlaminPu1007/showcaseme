@@ -225,6 +225,18 @@ export interface ProjectSchema {
 } //qa-brains.png
 export const projectsData: ProjectSchema[] = [
   {
+    id: '21',
+    name: 'Algorithm Visualization',
+    imgPath: '/assets/algorithm-visualization.png',
+    type: 'web',
+    liveUrl: 'https://visual-gorithm.vercel.app/',
+    sourceCodeUrl: 'https://github.com/AlaminPu1007/algorithm-visualizer',
+    description:
+      'Tree Traversal (DFS and BFS), N-Queens Problem, various Sorting Algorithms (Merge, Quick), Unique Path Calculations, Cycle Detection in Linked Lists, and Shortest Path Algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)',
+    technology: ['ReactJs', 'NextJs', 'JavaScript'],
+    rootStack: 'Next Js',
+  },
+  {
     id: '20',
     name: 'QA Brains',
     imgPath: '/assets/qa-brains.png',
