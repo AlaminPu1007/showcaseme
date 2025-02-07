@@ -14,13 +14,21 @@ export const workExperience: WorkExperience[] = [
   {
     id: 1,
     title: 'SOFTWARE ENGINEER',
-    organizationName: 'Riseup Labs',
-    location: 'Uttara, Dhaka, Bangladesh',
-    workDuration: 'July 2022 - Present',
+    organizationName: 'TechnoNext Software Ltd',
+    location: '97 Sohrawardy Ave, Dhaka 1212',
+    workDuration: 'OCT 2024 - Present',
     type: 'Full Time',
   },
   {
     id: 2,
+    title: 'SOFTWARE ENGINEER',
+    organizationName: 'Riseup Labs',
+    location: 'Uttara, Dhaka, Bangladesh',
+    workDuration: 'July 2022 - Nov 2024',
+    type: 'Full Time',
+  },
+  {
+    id: 3,
     title: 'SOFTWARE ENGINEER',
     organizationName: 'Micple Inc',
     location: 'Dhaka, Bangladesh',
@@ -28,7 +36,7 @@ export const workExperience: WorkExperience[] = [
     type: 'Full Time',
   },
   {
-    id: 3,
+    id: 4,
     title: 'SOFTWARE ENGINEER',
     organizationName: 'Devech Ltd',
     location: 'Dhaka, Bangladesh',
@@ -144,7 +152,7 @@ export const techStacks: TechStack[] = [
       },
       {
         id: '206',
-        name: 'LeetCode (700+)',
+        name: 'LeetCode (800+)',
         expertise: 'Experienced',
         url: 'https://leetcode.com/u/alamin66/',
         isFocusedAble: true,

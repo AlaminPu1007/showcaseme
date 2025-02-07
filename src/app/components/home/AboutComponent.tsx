@@ -18,7 +18,7 @@ const AboutComponent = () => {
         <h1 className='title-txt'>About Me</h1>
         <p className='m-0 mt-3 break-words p-0 text-lg text-theme-primary dark:text-theme-dark-primary'>
           {
-            "I'm a 26-year-old software engineer with 4+ years of experience in web technology, specializing in JavaScript, React.js (Next.js), and problem-solving. I am passionate about creating high-performance web applications and continuously improving my skills in modern web development technologies."
+            "I'm a 27-year-old software engineer with 5+ years of experience in web technology, specializing in JavaScript, React.js (Next.js), and problem-solving. I am passionate about creating high-performance web applications and continuously improving my skills in modern web development technologies."
           }
         </p>
         {/* <p className='m-0 mt-3 break-words p-0 text-lg text-theme-primary dark:text-theme-dark-primary'>
@@ -29,7 +29,7 @@ const AboutComponent = () => {
       </div>
 
       <div className='title-top-gap'>
-        <h1 className='title-txt break-words'>{`Work Experience (4+ Years)`}</h1>
+        <h1 className='title-txt break-words'>{`Work Experience (5+ Years)`}</h1>
 
         {workExperience?.map((item: WorkExperience, index: number) => {
           // define delay time for each node

@@ -2,51 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-// body
-// .blue-gradient-wave-animation
-// {
-//   animation: gradient 40s linear infinite;
-//   background: linear-gradient(
-//     125deg,
-//     #c6e5fa 3.85%,
-//     #e7f5fd 7.7%,
-//     #c6e5fa 15.4%,
-//     #e7f5fd 19.25%,
-//     #c6e5fa 30.8%,
-//     #e7f5fd 34.65%,
-//     #c6e5fa 38.5%,
-//     #e7f5fd 46.15%,
-//     #c6e5fa 53.8%,
-//     #e7f5fd 57.65%,
-//     #c6e5fa 61.6%,
-//     #e7f5fd 69.3%,
-//     #c6e5fa 77%,
-//     #e7f5fd 80.85%,
-//     #c6e5fa 84.7%,
-//     #e7f5fd 92.4%,
-//     #c6e5fa 96.25%,
-//     #e7f5fd
-//   );
-//   background-size: 200% 200%;
-// }
-
-// @keyframes gradient {
-//   0% {
-//     background-position: 0 50%;
-//   }
-//   50% {
-//     background-position: 100% 50%;
-//   }
-
-//   100% {
-//     background-position: 0 50%;
-//   }
-// }
-
-/* 
-  The header navigation some reusable thing goes here
-*/
-
 .navbar {
   @apply fixed list-none flex-col duration-200 ease-in max-[1023px]:left-0 max-[1023px]:top-0 max-[1023px]:h-[100vh] max-[1023px]:w-[350px] max-[1023px]:bg-white max-[1023px]:px-4 max-[1023px]:pt-[25px] max-[1023px]:shadow-[0_8px_30px_rgb(0,0,0,0.12)] lg:static lg:ml-auto lg:flex lg:flex-row lg:flex-wrap lg:items-center dark:max-[1023px]:bg-theme-dark-bg;
 }
