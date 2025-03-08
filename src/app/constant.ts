@@ -16,7 +16,7 @@ export const workExperience: WorkExperience[] = [
     title: 'SOFTWARE ENGINEER',
     organizationName: 'TechnoNext Software Ltd',
     location: '97 Sohrawardy Ave, Dhaka 1212',
-    workDuration: 'OCT 2024 - Present',
+    workDuration: 'Nov 2024 - Present',
     type: 'Full Time',
   },
   {
@@ -24,7 +24,7 @@ export const workExperience: WorkExperience[] = [
     title: 'SOFTWARE ENGINEER',
     organizationName: 'Riseup Labs',
     location: 'Uttara, Dhaka, Bangladesh',
-    workDuration: 'July 2022 - Nov 2024',
+    workDuration: 'Jul 2022 - Oct 2024',
     type: 'Full Time',
   },
   {
@@ -32,7 +32,7 @@ export const workExperience: WorkExperience[] = [
     title: 'SOFTWARE ENGINEER',
     organizationName: 'Micple Inc',
     location: 'Dhaka, Bangladesh',
-    workDuration: 'Jan 2022 - June 2022',
+    workDuration: 'Jan 2022 - Jun 2022',
     type: 'Full Time',
   },
   {
@@ -40,7 +40,7 @@ export const workExperience: WorkExperience[] = [
     title: 'SOFTWARE ENGINEER',
     organizationName: 'Devech Ltd',
     location: 'Dhaka, Bangladesh',
-    workDuration: 'March 2020 - Dec 2021',
+    workDuration: 'Mar 2020 - Dec 2021',
     type: 'Full Time',
   },
 ];

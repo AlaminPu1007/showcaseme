@@ -10,6 +10,7 @@ import {
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { calculateDuration } from '@/app/utils/helperFunctions';
 
 const AboutComponent = () => {
   return (
@@ -101,7 +102,7 @@ const AboutComponent = () => {
                       />
                     </svg>
 
-                    <span className='ms-1  whitespace-nowrap text-sm text-theme-dark-primary'>
+                    <span className='ms-1 text-sm text-theme-dark-primary sm:whitespace-nowrap'>
                       {item.location}
                     </span>
                   </address>
@@ -135,6 +136,10 @@ const AboutComponent = () => {
                   </svg>
                   <span className='ms-1 text-sm text-theme-dark-primary '>
                     {item.workDuration}
+                    {''}
+                    <span className='bg-theme-light-primary rounded-md px-2 py-1 text-xs font-semibold text-theme-dark-primary'>
+                      ({calculateDuration(item.workDuration)})
+                    </span>
                   </span>
                 </div>
               </div>
