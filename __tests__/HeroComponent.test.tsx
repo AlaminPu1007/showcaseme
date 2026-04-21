@@ -9,8 +9,8 @@ describe('run test for <HeroComponent />', () => {
   it('to check some text are present', () => {
     render(<HeroComponent />); // ARRANGE EVERYTHING FOR THE TEST
 
-    const heading = screen.getByText('jon doe', { exact: false }); // ACTION WE ARE TAKING
-    const heading2 = screen.getByText('Business development', { exact: true }); // ACTION WE ARE TAKING
+    const heading = screen.getByText('Md Alamin', { exact: false }); // ACTION WE ARE TAKING
+    const heading2 = screen.getByText('Software Engineer', { exact: true }); // ACTION WE ARE TAKING
 
     expect(heading).toBeInTheDocument(); // ASSERT
     expect(heading2).toBeInTheDocument(); // ASSERT
@@ -36,14 +36,12 @@ describe('run test for <HeroComponent />', () => {
   it('should have clicked on download resume button', () => {
     render(<HeroComponent />);
 
-    // get the button
-    const button = screen.getByRole('button', { name: 'Download Resume' });
-    // trigger button click event
-    fireEvent.click(button);
+    const resumeLink = screen.getByRole('link', { name: 'Download Resume' });
+    fireEvent.click(resumeLink);
+    expect(resumeLink).toHaveAttribute('href', '/assets/resume/alamin.pdf');
 
-    // click on another event
-    const button2 = screen.getByRole('button', { name: "Let's talk" });
-    // trigger button click event
-    fireEvent.click(button2);
+    const contactLink = screen.getByRole('link', { name: "Let's talk" });
+    fireEvent.click(contactLink);
+    expect(contactLink).toHaveAttribute('href', '/#footer-widget');
   });
 });

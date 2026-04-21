@@ -4,15 +4,10 @@ import Footer from '@/app/components/layouts/footer/FooterComponent';
 import { render, screen } from '@testing-library/react';
 
 describe('Testing <Footer />', () => {
-  it('test footer nav list has specific css property', () => {
+  it('test footer nav list has the expected destination', () => {
     render(<Footer />);
     const homeElement = screen.getByRole('link', { name: 'Home' });
-
-    expect(homeElement).toHaveStyle({
-      color: 'inherit',
-      'font-size': '1.125rem;',
-      'padding-left': '0.25rem;',
-    });
+    expect(homeElement).toHaveAttribute('href', '/');
   });
 
   // check a link has specific href content

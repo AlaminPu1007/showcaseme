@@ -54,12 +54,12 @@ const HeaderComponent = () => {
   return (
     <nav className='pt-[5px] lg:pt-[20px]'>
       {/* for drawer navigation only lg: 1024 screen size */}
-      <div className='container relative py-[20px]'>
+      <div className='relative container py-[20px]'>
         <div className='nav-wrapper flex'>
           <Link
             href='/'
             // className='bg-custom-gradient bg-clip-text pr-4 text-4xl font-bold tracking-wider text-transparent md:pr-0'
-            className='m-0 flex items-center p-0 pr-4 text-center text-3xl font-semibold tracking-wider text-theme-secondary sm:text-4xl md:pr-0 dark:text-white'
+            className='text-theme-secondary m-0 flex items-center p-0 pr-4 text-center text-3xl font-semibold tracking-wider sm:text-4xl md:pr-0 dark:text-white'
           >
             ALAMIN
           </Link>
@@ -72,21 +72,21 @@ const HeaderComponent = () => {
             <li className='flex items-center justify-between lg:hidden'>
               <Link
                 href='/'
-                className={`mb-3 pr-4 text-3xl font-semibold tracking-wider text-theme-secondary sm:text-4xl md:pr-0 dark:text-white`}
+                className={`text-theme-secondary mb-3 pr-4 text-3xl font-semibold tracking-wider sm:text-4xl md:pr-0 dark:text-white`}
                 onClick={onCloseDrawerNav}
               >
                 ALAMIN
               </Link>
-              <div className='absolute right-3 top-9 block lg:hidden'>
+              <div className='absolute top-9 right-3 block lg:hidden'>
                 <button
                   onClick={openDrawerNav}
                   className={`relative mt-2 flex h-[18px] w-[26px] cursor-pointer flex-col justify-between duration-300 ease-in`}
                 >
                   <span
-                    className={`delay-400 absolute top-0 inline h-[2px]  w-full bg-theme-primary duration-300 ease-in dark:bg-white dark:opacity-70 ${isDrawerOpen ? 'rotate-[45deg]' : 'rotate-[0deg]'}`}
+                    className={`bg-theme-primary absolute top-0 inline h-[2px] w-full delay-400 duration-300 ease-in dark:bg-white dark:opacity-70 ${isDrawerOpen ? 'rotate-[45deg]' : 'rotate-[0deg]'}`}
                   ></span>
                   <span
-                    className={`delay-400 inline h-[2px]  w-full bg-theme-primary duration-300 ease-in dark:bg-white dark:opacity-70 ${isDrawerOpen ? 'rotate-[-45deg]' : 'rotate-[0deg]'}`}
+                    className={`bg-theme-primary inline h-[2px] w-full delay-400 duration-300 ease-in dark:bg-white dark:opacity-70 ${isDrawerOpen ? 'rotate-[-45deg]' : 'rotate-[0deg]'}`}
                   ></span>
                 </button>
               </div>
@@ -94,7 +94,7 @@ const HeaderComponent = () => {
             <li>
               <Link
                 href='/'
-                className={`nav-list-item-link dark:hover:bg-initial text-center dark:hover:text-theme-dark-primary`}
+                className={`nav-list-item-link dark:hover:bg-initial dark:hover:text-theme-dark-primary text-center`}
                 onClick={onCloseDrawerNav}
               >
                 Home
@@ -192,8 +192,8 @@ const HeaderComponent = () => {
         </div>
 
         {!isDrawerOpen ? (
-          <div className='absolute right-[2%] top-[30px] flex duration-200 ease-in lg:hidden '>
-            <button onClick={themeToggler} className='me-3 mt-[-3px]  '>
+          <div className='absolute top-[30px] right-[2%] flex duration-200 ease-in lg:hidden'>
+            <button onClick={themeToggler} className='me-3 mt-[-3px]'>
               {isDarkMode ? (
                 <svg viewBox='0 0 24 24' fill='none' className='h-6 w-6'>
                   <path
@@ -237,9 +237,9 @@ const HeaderComponent = () => {
               className='relative flex h-[18px] w-[26px] flex-col justify-between'
               onClick={openDrawerNav}
             >
-              <span className='inline h-[2px] w-full bg-theme-primary dark:bg-white dark:opacity-70'></span>
-              <span className='inline h-[2px] w-full bg-theme-primary dark:bg-white dark:opacity-70'></span>
-              <span className='inline h-[2px] w-full bg-theme-primary dark:bg-white dark:opacity-70'></span>
+              <span className='bg-theme-primary inline h-[2px] w-full dark:bg-white dark:opacity-70'></span>
+              <span className='bg-theme-primary inline h-[2px] w-full dark:bg-white dark:opacity-70'></span>
+              <span className='bg-theme-primary inline h-[2px] w-full dark:bg-white dark:opacity-70'></span>
             </button>
           </div>
         ) : null}

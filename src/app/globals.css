@@ -1,0 +1,52 @@
+@config '../../tailwind.config.mjs';
+@import 'tailwindcss';
+
+.navbar {
+  @apply dark:max-[1023px]:bg-theme-dark-bg fixed list-none flex-col duration-200 ease-in max-[1023px]:top-0 max-[1023px]:left-0 max-[1023px]:h-[100vh] max-[1023px]:w-[350px] max-[1023px]:bg-white max-[1023px]:px-4 max-[1023px]:pt-[25px] max-[1023px]:shadow-[0_8px_30px_rgb(0,0,0,0.12)] lg:static lg:ml-auto lg:flex lg:flex-row lg:flex-wrap lg:items-center;
+}
+
+.nav-list-item-link {
+  @apply text-theme-primary after:bg-theme-secondary dark:text-theme-dark-primary dark:after:bg-theme-white relative my-2 inline-block px-1 pb-2 text-lg font-light whitespace-nowrap duration-300 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:duration-200 hover:after:w-full lg:mx-[12px] lg:my-0 lg:pb-1;
+}
+
+.title-txt {
+  @apply text-theme-secondary m-0 p-0 py-3 text-[1.55rem] font-bold tracking-[.02em] uppercase sm:text-3xl dark:text-white;
+}
+
+.section-top-gap {
+  @apply mt-[60px] md:mt-[80px];
+}
+
+.title-top-gap {
+  @apply mt-[20px] lg:mt-[40px];
+}
+
+.tab-btn {
+  @apply text-theme-dark-primary after:bg-theme-btn hover:text-theme-btn relative me-8 cursor-pointer border-b-[1px] border-[#E5E7EB] px-4 py-2 text-base duration-200 after:absolute after:bottom-[-1px] after:left-0 after:h-[1px] after:w-0 after:duration-200 hover:after:w-[100%] max-[550px]:px-2 max-[425px]:me-4 lg:text-lg;
+}
+
+.active-btn {
+  @apply border-theme-btn text-theme-btn dark:border-theme-btn;
+}
+
+.after-hover-animation {
+  @apply after:bg-theme-secondary dark:after:bg-theme-dark-secondary after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:duration-200 hover:after:w-[100%];
+}
+
+.footer-nav-link {
+  @apply text-theme-secondary after:bg-theme-secondary dark:text-theme-dark-secondary dark:after:bg-theme-white relative inline-block px-1 pb-1 text-base duration-300 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:duration-300 hover:after:w-full lg:text-lg;
+}
+
+.footer-txt-gradient {
+  background-image: linear-gradient(to left, #ec4899, #a855f7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+}

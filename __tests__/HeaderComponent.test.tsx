@@ -11,15 +11,10 @@ describe('Header', () => {
     expect(homeTxt).toBeInTheDocument();
   });
 
-  // To check nav have specific color by inherit parent
-  it('nav item should have inherit color', () => {
+  it('nav item should have the expected navigation href', () => {
     render(<Header />);
-
-    // get the item from header
     const navItem = screen.getByRole('link', { name: 'Home' });
-
-    // check it has specific color
-    expect(navItem).toHaveStyle({ color: 'inherit' });
+    expect(navItem).toHaveAttribute('href', '/');
   });
 
   // check over effect for an nav item

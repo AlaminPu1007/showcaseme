@@ -81,15 +81,10 @@ const ProjectComponent = () => {
             // define delay time for each node
             const delayTime = Number('0.' + index * 0.22);
 
-            // avoid this to used in real life application
-            // this may cause to performance issue
-            // we have need to framer motion each time, so we have to choose this
-            const keyId = item.id + Math.floor(Math.random() * 999);
-
             return (
               <motion.div
-                key={keyId}
-                className='group relative flex flex-col overflow-hidden rounded-lg border-[0.5px]  border-white bg-white shadow-md hover:shadow-lg dark:border-[transparent] dark:bg-[#19192d] dark:hover:border-[#19192d]'
+                key={item.id}
+                className='group relative flex flex-col overflow-hidden rounded-lg border-[0.5px] border-white bg-white shadow-md hover:shadow-lg dark:border-[transparent] dark:bg-[#19192d] dark:hover:border-[#19192d]'
                 initial='hidden'
                 whileInView='visible'
                 viewport={{ once: true }}
@@ -111,20 +106,20 @@ const ProjectComponent = () => {
                     placeholder='blur'
                     blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN89R8AAtkB6zy+wn8AAAAASUVORK5CYII='
                   />
-                  <span className='text-md absolute left-[-8%] top-[11%] block w-[40%] rotate-[-45deg] bg-theme-btn text-center text-white'>
+                  <span className='text-md bg-theme-btn absolute top-[11%] left-[-8%] block w-[40%] rotate-[-45deg] text-center text-white'>
                     {item.rootStack}
                   </span>
                 </div>
                 <div className='items-between flex flex-grow flex-col'>
                   <div className='px-5 pt-5'>
-                    <h2 className='m-0 p-0 text-xl font-medium uppercase lg:text-2xl dark:text-theme-dark-secondary'>
+                    <h2 className='dark:text-theme-dark-secondary m-0 p-0 text-xl font-medium uppercase lg:text-2xl'>
                       {item.name}
                     </h2>
-                    <p className='break-words py-3 text-base text-theme-primary dark:text-theme-dark-secondary'>
+                    <p className='text-theme-primary dark:text-theme-dark-secondary py-3 text-base break-words'>
                       {item.description}
                     </p>
 
-                    <div className='mb-3 flex flex-wrap items-center text-[17px] dark:text-theme-dark-secondary'>
+                    <div className='dark:text-theme-dark-secondary mb-3 flex flex-wrap items-center text-[17px]'>
                       <span className='shrink-0 font-semibold'>
                         Tech stacks : &nbsp;
                       </span>
@@ -139,7 +134,7 @@ const ProjectComponent = () => {
                       })}
                     </div>
                   </div>
-                  <div className='mt-auto flex items-center  justify-between px-5 pb-5 duration-200'>
+                  <div className='mt-auto flex items-center justify-between px-5 pb-5 duration-200'>
                     <div className='flex items-center duration-200'>
                       <svg
                         width='20'
@@ -168,7 +163,7 @@ const ProjectComponent = () => {
                       {item.liveUrl ? (
                         <Link
                           href={item.liveUrl}
-                          className={`ms-2 block text-base tracking-[0.019rem] underline duration-200 hover:text-[#0D3C9F] dark:text-white dark:hover:text-theme-btn`}
+                          className={`dark:hover:text-theme-btn ms-2 block text-base tracking-[0.019rem] underline duration-200 hover:text-[#0D3C9F] dark:text-white`}
                           target='_blank'
                           data-umami-event={`projects-${item.name} Live Preview`}
                         >
@@ -176,7 +171,7 @@ const ProjectComponent = () => {
                         </Link>
                       ) : (
                         <h4
-                          className={`ms-2 block cursor-not-allowed text-base tracking-[0.019rem] underline duration-200  dark:text-white`}
+                          className={`ms-2 block cursor-not-allowed text-base tracking-[0.019rem] underline duration-200 dark:text-white`}
                         >
                           Live Preview
                         </h4>
@@ -209,14 +204,14 @@ const ProjectComponent = () => {
                       {item.sourceCodeUrl ? (
                         <Link
                           href={item.sourceCodeUrl}
-                          className='ms-2 block text-base tracking-[0.019rem] underline duration-200 hover:text-[#0D3C9F] dark:text-white dark:hover:text-theme-btn'
+                          className='dark:hover:text-theme-btn ms-2 block text-base tracking-[0.019rem] underline duration-200 hover:text-[#0D3C9F] dark:text-white'
                           target='_blank'
                           data-umami-event={`projects-${item.name} View Code`}
                         >
                           View Code
                         </Link>
                       ) : (
-                        <h4 className='ms-2 block cursor-not-allowed text-base tracking-[0.019rem] underline duration-200 dark:text-white '>
+                        <h4 className='ms-2 block cursor-not-allowed text-base tracking-[0.019rem] underline duration-200 dark:text-white'>
                           View Code
                         </h4>
                       )}

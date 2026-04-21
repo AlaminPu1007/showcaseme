@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
-import './globals.scss';
+import './globals.css';
 import HeaderComponent from './components/layouts/header/HeaderComponent';
 import FooterComponent from './components/layouts/footer/FooterComponent';
 import React from 'react';
@@ -26,8 +26,7 @@ export default function RootLayout({
     <html lang='en' className='dark scroll-smooth'>
       <body
         suppressHydrationWarning={true}
-        className={`
-          ${poppins.className} dark:bg-custom-radial] bg-[#f5f7fe] ease-in dark:bg-theme-dark-bg`}
+        className={` ${poppins.className} dark:bg-custom-radial] dark:bg-theme-dark-bg bg-[#f5f7fe] ease-in`}
         // className={`
         //   ${poppins.className} bg-[#f5f7fe] ease-in dark:bg-theme-dark-bg dark:bg-[url('../../public/assets/bg-image.png')]`}
       >

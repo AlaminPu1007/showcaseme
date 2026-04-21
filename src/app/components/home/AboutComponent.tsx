@@ -17,7 +17,7 @@ const AboutComponent = () => {
     <div className='section-top-gap container duration-200'>
       <div id='about-myself'>
         <h1 className='title-txt'>About Me</h1>
-        <p className='m-0 mt-3 break-words p-0 text-lg text-theme-primary dark:text-theme-dark-primary'>
+        <p className='text-theme-primary dark:text-theme-dark-primary m-0 mt-3 p-0 text-lg break-words'>
           {
             "I'm a 27-year-old software engineer with 5+ years of experience in web technology, specializing in JavaScript, React.js (Next.js), and problem-solving. I am passionate about creating high-performance web applications and continuously improving my skills in modern web development technologies."
           }
@@ -53,17 +53,17 @@ const AboutComponent = () => {
               // to validate in jest
               data-testid='work-experience-card'
             >
-              <div className='flex shrink-0 items-center justify-between '>
-                <h3 className='m-0 p-0 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
+              <div className='flex shrink-0 items-center justify-between'>
+                <h3 className='text-theme-primary dark:text-theme-dark-secondary m-0 p-0 text-[20px] font-medium tracking-[.07em] uppercase'>
                   {item.title}
                 </h3>
-                <p className='m-0 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-medium text-[#01AE13] opacity-100 dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
+                <p className='dark:border-theme-dark-primary dark:text-theme-dark-secondary m-0 rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-medium whitespace-nowrap text-[#01AE13] opacity-100 dark:border-[1px] dark:bg-transparent'>
                   {item.type}
                 </p>
               </div>
 
               <div className='mt-3 flex flex-col flex-wrap sm:flex-row sm:items-center'>
-                <div className='flex sm:items-center '>
+                <div className='flex sm:items-center'>
                   <div className='flex justify-start sm:items-center'>
                     <svg
                       width='16'
@@ -78,7 +78,7 @@ const AboutComponent = () => {
                         fill='#A7A7A7'
                       />
                     </svg>
-                    <span className='ms-1 text-sm text-theme-dark-primary '>
+                    <span className='text-theme-dark-primary ms-1 text-sm'>
                       {item.organizationName}
                     </span>
                   </div>
@@ -102,13 +102,13 @@ const AboutComponent = () => {
                       />
                     </svg>
 
-                    <span className='ms-1 text-sm text-theme-dark-primary sm:whitespace-nowrap'>
+                    <span className='text-theme-dark-primary ms-1 text-sm sm:whitespace-nowrap'>
                       {item.location}
                     </span>
                   </address>
                 </div>
 
-                <div className='mt-2 flex items-center justify-start  sm:ml-auto sm:mt-0'>
+                <div className='mt-2 flex items-center justify-start sm:mt-0 sm:ml-auto'>
                   <svg
                     width='16'
                     height='12'
@@ -134,17 +134,17 @@ const AboutComponent = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span className='ms-1 text-sm text-theme-dark-primary '>
+                  <span className='text-theme-dark-primary ms-1 text-sm'>
                     {item.workDuration}
                     {''}
-                    <span className='bg-theme-light-primary rounded-md px-2 py-1 text-xs font-semibold text-theme-dark-primary'>
+                    <span className='bg-theme-light-primary text-theme-dark-primary rounded-md px-2 py-1 text-xs font-semibold'>
                       ({calculateDuration(item.workDuration)})
                     </span>
                   </span>
                 </div>
               </div>
 
-              <div className='mt-[20px] block h-[0.5px] bg-[#EBEAED] opacity-80 duration-200 group-hover:bg-theme-dark-bg group-hover:opacity-35 dark:bg-theme-dark-secondary dark:opacity-50 dark:group-hover:bg-theme-btn' />
+              <div className='group-hover:bg-theme-dark-bg dark:bg-theme-dark-secondary dark:group-hover:bg-theme-btn mt-[20px] block h-[0.5px] bg-[#EBEAED] opacity-80 duration-200 group-hover:opacity-35 dark:opacity-50' />
             </motion.div>
           );
         })}
@@ -154,17 +154,17 @@ const AboutComponent = () => {
         <h1 className='title-txt'>Education</h1>
 
         <div className='mt-4'>
-          <div className='flex shrink-0 items-center justify-between '>
-            <h3 className='m-0 p-0 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
+          <div className='flex shrink-0 items-center justify-between'>
+            <h3 className='text-theme-primary dark:text-theme-dark-secondary m-0 p-0 text-[20px] font-medium tracking-[.07em] uppercase'>
               Bachelor in Computer Science and Engineering
             </h3>
-            <p className='m-0 ms-6 whitespace-nowrap rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-medium text-[#01AE13] sm:ms-0 sm:px-5  dark:border-[1px] dark:border-theme-dark-primary dark:bg-transparent dark:text-theme-dark-secondary'>
+            <p className='dark:border-theme-dark-primary dark:text-theme-dark-secondary m-0 ms-6 rounded-full bg-[#D7FFE0] p-0 px-5 py-1.5 text-[12px] font-medium whitespace-nowrap text-[#01AE13] sm:ms-0 sm:px-5 dark:border-[1px] dark:bg-transparent'>
               Full Time
             </p>
           </div>
 
           <div className='mt-3 flex flex-col flex-wrap sm:flex-row sm:items-center'>
-            <div className='flex sm:items-center '>
+            <div className='flex sm:items-center'>
               <div className='flex justify-start sm:items-center'>
                 <svg
                   width='16'
@@ -179,7 +179,7 @@ const AboutComponent = () => {
                     fill='#A7A7A7'
                   />
                 </svg>
-                <span className='ms-1 text-sm text-theme-dark-primary'>
+                <span className='text-theme-dark-primary ms-1 text-sm'>
                   Prime University
                 </span>
               </div>
@@ -203,13 +203,13 @@ const AboutComponent = () => {
                   />
                 </svg>
 
-                <span className='ms-1 whitespace-nowrap text-sm text-theme-dark-primary'>
+                <span className='text-theme-dark-primary ms-1 text-sm whitespace-nowrap'>
                   Dhaka, Bangladesh
                 </span>
               </address>
             </div>
 
-            <div className='mt-2 flex items-center justify-start  sm:ml-auto sm:mt-0'>
+            <div className='mt-2 flex items-center justify-start sm:mt-0 sm:ml-auto'>
               <svg
                 width='16'
                 height='12'
@@ -235,13 +235,13 @@ const AboutComponent = () => {
                   </clipPath>
                 </defs>
               </svg>
-              <span className='ms-1 text-sm text-theme-dark-primary '>
+              <span className='text-theme-dark-primary ms-1 text-sm'>
                 Feb 2016 - Jan 2020
               </span>
             </div>
           </div>
 
-          <div className='mt-[20px] block h-[0.5px] bg-[#EBEAED] opacity-80 duration-200 group-hover:bg-theme-dark-bg group-hover:opacity-35 dark:bg-theme-dark-secondary dark:opacity-50 dark:group-hover:bg-theme-btn' />
+          <div className='group-hover:bg-theme-dark-bg dark:bg-theme-dark-secondary dark:group-hover:bg-theme-btn mt-[20px] block h-[0.5px] bg-[#EBEAED] opacity-80 duration-200 group-hover:opacity-35 dark:opacity-50' />
         </div>
       </div>
 
@@ -255,7 +255,7 @@ const AboutComponent = () => {
             return (
               <motion.div
                 key={item.id}
-                className={` group rounded-xl  border-[0.5px] pb-7 pe-[20px] ps-[40px] shadow-sm duration-200 hover:border-theme-btn sm:ps-[80px] md:pe-[20px] lg:ps-[60px] xl:px-[50px]`}
+                className={`group hover:border-theme-btn rounded-xl border-[0.5px] ps-[40px] pe-[20px] pb-7 shadow-sm duration-200 sm:ps-[80px] md:pe-[20px] lg:ps-[60px] xl:px-[50px]`}
                 initial='hidden'
                 whileInView='visible'
                 viewport={{ once: true }}
@@ -269,7 +269,7 @@ const AboutComponent = () => {
                 }}
                 data-testid='my-tech-stack'
               >
-                <h3 className='my-4 mt-6 text-[20px] font-medium uppercase tracking-[.07em] text-theme-primary dark:text-theme-dark-secondary'>
+                <h3 className='text-theme-primary dark:text-theme-dark-secondary my-4 mt-6 text-[20px] font-medium tracking-[.07em] uppercase'>
                   {item.title}
                 </h3>
 
@@ -287,7 +287,7 @@ const AboutComponent = () => {
                         <path
                           d='M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z'
                           fill='#666666'
-                          className='duration-500 group-hover:fill-theme-btn dark:fill-theme-btn dark:group-hover:fill-white'
+                          className='group-hover:fill-theme-btn dark:fill-theme-btn duration-500 dark:group-hover:fill-white'
                         />
                       </svg>
                       <div className='relative ms-3 pe-2'>
@@ -295,25 +295,25 @@ const AboutComponent = () => {
                           <Link
                             href={stack?.url}
                             target={'_blank'}
-                            className={`relative m-0 block cursor-pointer break-words p-0 text-xl font-semibold text-theme-secondary underline duration-200 xl:whitespace-nowrap xl:break-normal dark:text-theme-dark-secondary`}
+                            className={`text-theme-secondary dark:text-theme-dark-secondary relative m-0 block cursor-pointer p-0 text-xl font-semibold break-words underline duration-200 xl:break-normal xl:whitespace-nowrap`}
                             data-umami-event={`button-${stack.name}`}
                           >
                             {stack.name}
                           </Link>
                         ) : (
                           <h1
-                            className={`m-0 block cursor-auto p-0 text-xl font-semibold text-theme-secondary duration-200 dark:text-theme-dark-secondary`}
+                            className={`text-theme-secondary dark:text-theme-dark-secondary m-0 block cursor-auto p-0 text-xl font-semibold duration-200`}
                           >
                             {stack.name}
                           </h1>
                         )}
 
-                        <small className='m-0 p-0 text-theme-primary dark:text-theme-dark-secondary'>
+                        <small className='text-theme-primary dark:text-theme-dark-secondary m-0 p-0'>
                           {stack.expertise}
                         </small>
                         {stack.isFocusedAble ? (
                           <span
-                            className={`absolute right-[0%] top-1 flex items-center justify-center`}
+                            className={`absolute top-1 right-[0%] flex items-center justify-center`}
                           >
                             <span className='absolute inline-flex h-2 w-2 animate-ping rounded-full bg-sky-400 opacity-75'></span>
                             <span className='relative inline-flex h-1.5 w-1.5 rounded-full bg-pink-400'></span>

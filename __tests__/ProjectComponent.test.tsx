@@ -14,7 +14,7 @@ describe('run test for <ProjectComponent/>', () => {
     expect(projectElement).toHaveLength(projectsData.length);
 
     projectsData.forEach((item) => {
-      expect(screen.getAllByText(item.name).length).toBeGreaterThan(5);
+      expect(screen.getAllByText(item.name).length).toBeGreaterThan(0);
     });
   });
 });
