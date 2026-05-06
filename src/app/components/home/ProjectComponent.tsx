@@ -9,6 +9,19 @@ import Link from 'next/link';
 const ProjectComponent = () => {
   const [activeBtn, setActiveBtn] = useState<string>('0');
   const [data, setData] = useState<ProjectSchema[]>(projectsData || []);
+  const [expandedTech, setExpandedTech] = useState<Set<string>>(new Set());
+
+  const toggleTechExpand = (projectId: string) => {
+    setExpandedTech((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(projectId)) {
+        newSet.delete(projectId);
+      } else {
+        newSet.add(projectId);
+      }
+      return newSet;
+    });
+  };
 
   const filteredItem = (type: string, techType: string) => {
     setActiveBtn(type);
@@ -72,7 +85,7 @@ const ProjectComponent = () => {
                     blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN89R8AAtkB6zy+wn8AAAAASUVORK5CYII='
                   />
                   <div className='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100' />
-                  <span className='bg-theme-btn absolute top-4 left-4 rounded-full px-3 py-1 text-xs font-semibold text-white shadow-lg'>
+                  <span className='text-md bg-theme-btn absolute top-[11%] left-[-8%] block w-[40%] rotate-[-45deg] text-center text-white'>
                     {item.rootStack}
                   </span>
                 </div>
@@ -86,7 +99,10 @@ const ProjectComponent = () => {
                   </p>
 
                   <div className='mb-4 flex flex-wrap gap-2'>
-                    {item.technology.slice(0, 3).map((tech, i: number) => (
+                    {(expandedTech.has(item.id)
+                      ? item.technology
+                      : item.technology.slice(0, 3)
+                    ).map((tech, i: number) => (
                       <span
                         key={i}
                         className='rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700 dark:bg-gray-800 dark:text-gray-300'
@@ -95,9 +111,14 @@ const ProjectComponent = () => {
                       </span>
                     ))}
                     {item.technology.length > 3 && (
-                      <span className='bg-theme-btn/10 text-theme-btn rounded-full px-3 py-1 text-xs font-medium'>
-                        +{item.technology.length - 3}
-                      </span>
+                      <button
+                        onClick={() => toggleTechExpand(item.id)}
+                        className='bg-theme-btn/10 text-theme-btn hover:bg-theme-btn rounded-full px-3 py-1 text-xs font-medium transition-colors hover:text-white'
+                      >
+                        {expandedTech.has(item.id)
+                          ? 'Show less'
+                          : `+${item.technology.length - 3}`}
+                      </button>
                     )}
                   </div>
 
