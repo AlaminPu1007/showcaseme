@@ -39,7 +39,7 @@ const HeroComponent = () => {
           <div className='item-center my-8 flex flex-col justify-center sm:flex-row'>
             <a
               onClick={handleDownload}
-              className='hover:bg-theme-btn dark:border-theme-btn dark:text-theme-btn dark:hover:text-theme-dark-bg mb-7 rounded-md border-[1px] px-8 py-3 whitespace-nowrap duration-200 hover:text-white sm:me-5 sm:mb-0 dark:hover:bg-white'
+              className='hover:bg-theme-btn dark:border-theme-btn dark:text-theme-btn dark:hover:text-theme-dark-bg mb-7 cursor-pointer rounded-md border-[1px] px-8 py-3 whitespace-nowrap duration-200 hover:text-white sm:me-5 sm:mb-0 dark:hover:bg-white'
               data-umami-event='download resume'
             >
               Download Resume
