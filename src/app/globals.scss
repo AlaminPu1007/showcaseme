@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .navbar {
-  @apply fixed list-none flex-col duration-200 ease-in max-[1023px]:left-0 max-[1023px]:top-0 max-[1023px]:h-[100vh] max-[1023px]:w-[350px] max-[1023px]:bg-white max-[1023px]:px-4 max-[1023px]:pt-[25px] max-[1023px]:shadow-[0_8px_30px_rgb(0,0,0,0.12)] lg:static lg:ml-auto lg:flex lg:flex-row lg:flex-wrap lg:items-center dark:max-[1023px]:bg-theme-dark-bg;
+  @apply dark:max-[1023px]:bg-theme-dark-bg fixed list-none flex-col duration-200 ease-in max-[1023px]:top-0 max-[1023px]:left-0 max-[1023px]:h-[100vh] max-[1023px]:w-[350px] max-[1023px]:bg-white max-[1023px]:px-4 max-[1023px]:pt-[25px] max-[1023px]:shadow-[0_8px_30px_rgb(0,0,0,0.12)] lg:static lg:ml-auto lg:flex lg:flex-row lg:flex-wrap lg:items-center;
 }
 
 // .nav-list-item-link {
@@ -11,11 +11,11 @@
 // }
 
 .nav-list-item-link {
-  @apply relative my-2 inline-block whitespace-nowrap px-1 pb-2 text-lg font-light text-theme-primary duration-300 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-theme-secondary after:duration-200 hover:after:w-full lg:mx-[12px] lg:my-0 lg:pb-1 dark:text-theme-dark-primary dark:after:bg-theme-white;
+  @apply text-theme-primary after:bg-theme-secondary dark:text-theme-dark-primary dark:after:bg-theme-white relative my-2 inline-block px-1 pb-2 text-lg font-light whitespace-nowrap duration-300 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:duration-200 hover:after:w-full lg:mx-[12px] lg:my-0 lg:pb-1;
 }
 
 .title-txt {
-  @apply m-0 p-0 py-3 text-[1.55rem] font-bold uppercase tracking-[.02em] text-theme-secondary sm:text-3xl dark:text-white;
+  @apply text-theme-secondary m-0 p-0 py-3 text-[1.55rem] font-bold tracking-[.02em] uppercase sm:text-3xl dark:text-white;
 }
 
 .section-top-gap {
@@ -27,7 +27,7 @@
 }
 
 .tab-btn {
-  @apply relative me-8 cursor-pointer border-b-[1px] border-[#E5E7EB] px-4 py-2 text-base text-theme-dark-primary  duration-200 after:absolute after:bottom-[-1px] after:left-0 after:h-[1px] after:w-0 after:bg-theme-btn after:duration-200 hover:text-theme-btn hover:after:w-[100%] max-[550px]:px-2 max-[425px]:me-4 lg:text-lg;
+  @apply text-theme-dark-primary after:bg-theme-btn hover:text-theme-btn relative me-8 cursor-pointer border-b-[1px] border-[#E5E7EB] px-4 py-2 text-base duration-200 after:absolute after:bottom-[-1px] after:left-0 after:h-[1px] after:w-0 after:duration-200 hover:after:w-[100%] max-[550px]:px-2 max-[425px]:me-4 lg:text-lg;
 }
 
 .active-btn {
@@ -36,12 +36,12 @@
 
 // after effect with animation
 .after-hover-animation {
-  @apply after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-theme-secondary after:duration-200 hover:after:w-[100%] dark:after:bg-theme-dark-secondary;
+  @apply after:bg-theme-secondary dark:after:bg-theme-dark-secondary after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:duration-200 hover:after:w-[100%];
 }
 
 // footer styles goes here
 .footer-nav-link {
-  @apply relative inline-block px-1 pb-1 text-base text-theme-secondary  duration-300  after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-theme-secondary after:duration-300 hover:after:w-full lg:text-lg dark:text-theme-dark-secondary dark:after:bg-theme-white;
+  @apply text-theme-secondary after:bg-theme-secondary dark:text-theme-dark-secondary dark:after:bg-theme-white relative inline-block px-1 pb-1 text-base duration-300 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:duration-300 hover:after:w-full lg:text-lg;
 }
 
 .footer-txt-gradient {

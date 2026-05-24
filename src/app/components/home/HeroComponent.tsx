@@ -1,8 +1,28 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 const HeroComponent = () => {
+  const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('/assets/resume/alamin.pdf');
+      const blob = await response.blob();
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'alamin-resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Download failed:', error);
+    }
+  };
+
   return (
     <div className='container my-[30px] duration-200 md:my-[50px]'>
       <div className='item-center relative flex justify-center'>
@@ -18,8 +38,7 @@ const HeroComponent = () => {
           </h4>
           <div className='item-center my-8 flex flex-col justify-center sm:flex-row'>
             <a
-              href={'/assets/resume/alamin.pdf'}
-              download={true}
+              onClick={handleDownload}
               className='hover:bg-theme-btn dark:border-theme-btn dark:text-theme-btn dark:hover:text-theme-dark-bg mb-7 rounded-md border-[1px] px-8 py-3 whitespace-nowrap duration-200 hover:text-white sm:me-5 sm:mb-0 dark:hover:bg-white'
               data-umami-event='download resume'
             >
@@ -38,10 +57,10 @@ const HeroComponent = () => {
               <Image
                 alt='user-avatar'
                 // src={'https://i.stack.imgur.com/I4fiW.jpg?s=256&g=1'}
-                src={'/assets/profile-img/02.jpg'}
+                src={'/assets/profile-img/03.png'}
                 fill={true}
                 sizes='100%'
-                className='object-cover object-center'
+                className='object-cover object-top'
                 priority
                 placeholder='blur'
                 blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN89R8AAtkB6zy+wn8AAAAASUVORK5CYII='
