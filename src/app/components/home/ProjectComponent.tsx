@@ -78,20 +78,17 @@ const ProjectComponent = () => {
         </ul>
         <div className='mt-[40px] grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3'>
           {data.map((item: ProjectSchema, index: number) => {
-            // define delay time for each node
-            const delayTime = Number('0.' + index * 0.22);
-
             return (
               <motion.div
                 key={item.id}
                 className='group dark:hover:border-theme-btn/20 relative flex flex-col overflow-hidden rounded-xl border border-gray-100 bg-white shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-xl dark:border-gray-800 dark:bg-[#19192d]'
-                initial='hidden'
-                whileInView='visible'
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: delayTime }}
-                variants={{
-                  visible: { opacity: 1, scale: 1 },
-                  hidden: { opacity: 0, scale: 0.7 },
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: '-30px' }}
+                transition={{
+                  duration: 0.6,
+                  ease: 'easeOut',
+                  delay: index * 0.08,
                 }}
                 data-testid='project-data-id'
               >
