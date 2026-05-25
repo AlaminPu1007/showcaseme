@@ -57,10 +57,10 @@ const HeroComponent = () => {
               <Image
                 alt='user-avatar'
                 // src={'https://i.stack.imgur.com/I4fiW.jpg?s=256&g=1'}
-                src={'/assets/profile-img/03.png'}
+                src={'/assets/profile-img/04.JPG'}
                 fill={true}
                 sizes='100%'
-                className='object-cover object-top'
+                className='object-cover object-center'
                 priority
                 placeholder='blur'
                 blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN89R8AAtkB6zy+wn8AAAAASUVORK5CYII='
