@@ -18,8 +18,8 @@ const HeroComponent = () => {
       link.click();
       document.body.removeChild(link);
       window.URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error('Download failed:', error);
+    } catch {
+      // console.error('Download failed:', error);
     }
   };
 

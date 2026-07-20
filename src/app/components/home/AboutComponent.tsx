@@ -19,14 +19,9 @@ const AboutComponent = () => {
         <h1 className='title-txt'>About Me</h1>
         <p className='text-theme-primary dark:text-theme-dark-primary m-0 mt-3 p-0 text-lg break-words'>
           {
-            'Software Engineer with 5+ years of experience in JavaScript, React.js, Next.js, and modern web technologies. Skilled in building scalable, responsive, and high-performance web applications with a strong focus on clean code, UI/UX, and problem-solving. Experienced working on SaaS, CRM, e-commerce, and real-time applications using React, TypeScript, Redux, Node.js, and REST APIs. Passionate about learning new technologies and solving complex problems through data structures and algorithms.'
+            'Software Engineer with 5+ years of experience specializing in React Native, React.js, Next.js, and JavaScript. Experienced in building scalable, high-performance mobile and web applications with a strong focus on clean architecture, responsive UI/UX, and maintainable code. Proficient in React Native, TypeScript, Redux, Node.js, REST APIs, and modern frontend technologies, with hands-on experience delivering SaaS, CRM, e-commerce, and real-time applications. Passionate about solving complex problems through data structures and algorithms while continuously learning and adopting new technologies.'
           }
         </p>
-        {/* <p className='m-0 mt-3 break-words p-0 text-lg text-theme-primary dark:text-theme-dark-primary'>
-          {
-            "Experienced software engineer proficient in both frontend and backend development, with a specialization in mobile application development using React Native. With over 4+ years of hands-on experience, I've built a strong foundation in JavaScript and its frameworks, including ReactJs and NodeJs, while also crafting scalable backend solutions with ExpressJs. Having solved over 700+ problems on platforms like LeetCode and UVa, I'm now seeking to join a dynamic development team where I can leverage my diverse skill set to contribute to the creation of innovative and impactful projects "
-          }
-        </p> */}
       </div>
 
       <div className='title-top-gap'>
@@ -295,7 +290,7 @@ const AboutComponent = () => {
                           <Link
                             href={stack?.url}
                             target={'_blank'}
-                            className={`text-theme-secondary dark:text-theme-dark-secondary relative m-0 block cursor-pointer p-0 text-xl font-semibold break-words underline duration-200 xl:break-normal xl:whitespace-nowrap`}
+                            className={`text-theme-secondary dark:text-theme-dark-secondary after:bg-theme-secondary relative m-0 block cursor-pointer p-0 text-xl font-semibold break-words duration-200 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:content-[''] xl:break-normal xl:whitespace-nowrap dark:after:bg-white`}
                             data-umami-event={`button-${stack.name}`}
                           >
                             {stack.name}
