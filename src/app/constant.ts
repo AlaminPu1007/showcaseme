@@ -60,6 +60,7 @@ export interface TechStackItem {
   url: string | undefined;
   isFocusedAble: boolean;
 }
+
 export const techStacks: TechStack[] = [
   {
     id: '1',
@@ -144,17 +145,17 @@ export const techStacks: TechStack[] = [
     // title: 'Tech Wizardry: Backend & Problem Solver',
     stacks: [
       {
+        id: '206',
+        name: 'LeetCode (950+)',
+        expertise: 'Experienced',
+        url: 'https://leetcode.com/u/alamin66/',
+        isFocusedAble: true,
+      },
+      {
         id: '207',
         name: 'Hacker Rank (150+)',
         expertise: 'Experienced',
         url: 'https://www.hackerrank.com/profile/alamin66_sit',
-        isFocusedAble: true,
-      },
-      {
-        id: '206',
-        name: 'LeetCode (935+)',
-        expertise: 'Experienced',
-        url: 'https://leetcode.com/u/alamin66/',
         isFocusedAble: true,
       },
       {
@@ -230,17 +231,30 @@ export interface ProjectSchema {
   imgPath: string;
   technology: Array<string>;
   rootStack: string | undefined;
-} //qa-brains.png
+}
+
 export const projectsData: ProjectSchema[] = [
   {
-    id: '21',
-    name: 'Algorithm Visualization',
-    imgPath: '/assets/algorithm-visualization.png',
+    id: '23',
+    name: 'Cartup',
+    imgPath: '/assets/cartup.jpg',
     type: 'web',
-    liveUrl: 'https://visual-gorithm.vercel.app/',
-    sourceCodeUrl: 'https://github.com/AlaminPu1007/algorithm-visualizer',
+    liveUrl: 'https://cartup.com/',
+    sourceCodeUrl: '',
     description:
-      'Tree Traversal (DFS and BFS), N-Queens Problem, various Sorting Algorithms (Merge, Quick), Unique Path Calculations, Cycle Detection in Linked Lists, and Shortest Path Algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)',
+      'Developed an e-commerce platform with intuitive product management, order processing, and a streamlined shopping experience.',
+    technology: ['ReactJs', 'NextJs', 'JavaScript'],
+    rootStack: 'Next Js',
+  },
+  {
+    id: '24',
+    name: 'Firsttrip',
+    imgPath: '/assets/first-trip.jpg',
+    type: 'web',
+    liveUrl: 'https://firsttrip.com/',
+    sourceCodeUrl: '',
+    description:
+      'Built a modern travel booking platform with seamless flight and hotel search, trip planning, and a responsive user experience.',
     technology: ['ReactJs', 'NextJs', 'JavaScript'],
     rootStack: 'Next Js',
   },
@@ -263,6 +277,63 @@ export const projectsData: ProjectSchema[] = [
     ],
     rootStack: 'Next Js',
   },
+  {
+    id: '25',
+    name: 'Foodi',
+    type: 'mobile',
+    imgPath: '/assets/foodi.png',
+    liveUrl: 'https://apps.apple.com/us/app/foodi-food-delivery/id1610910233',
+    sourceCodeUrl: '',
+    description:
+      'Developed a food delivery app with real-time order tracking, restaurant browsing, and a seamless ordering experience.',
+    technology: ['React Native', 'React Navigation', 'Socket Io'],
+    rootStack: 'React Native',
+  },
+  {
+    id: '11',
+    name: 'Meal Manager',
+    type: 'mobile',
+    imgPath: '/assets/meal-manager.png',
+    liveUrl: 'https://play.google.com/store/apps/details?id=com.messmanager',
+    sourceCodeUrl: 'https://github.com/AlaminPu1007/Meal-Manager',
+    description:
+      'Developed Meal Manager, a popular React Native mobile app for tracking daily meals and mess expenses, with over 1000 downloads. Simplifies expense splitting and sharing among mess members for seamless management.',
+    technology: [
+      'React Native',
+      'NodeJS',
+      'MySql',
+      'React Navigation',
+      'Adonis Js',
+      'Context API',
+    ],
+    rootStack: 'React Native',
+  },
+  {
+    id: '22',
+    name: 'Docusign',
+    imgPath: '/assets/doc-sign.PNG',
+    type: 'web',
+    liveUrl: 'https://docsign.us-bangla.com/',
+    sourceCodeUrl: '',
+    description:
+      'Built a secure document signing platform with digital signatures, streamlined workflows, and efficient document management.',
+    technology: ['ReactJs', 'Express Js', 'JavaScript'],
+    rootStack: 'ReactJs',
+  },
+
+  {
+    id: '21',
+    name: 'Algorithm Visualization',
+    imgPath: '/assets/algorithm-visualization.png',
+    type: 'web',
+    liveUrl: 'https://visual-gorithm.vercel.app/',
+    sourceCodeUrl: 'https://github.com/AlaminPu1007/algorithm-visualizer',
+    description:
+      'Tree Traversal (DFS and BFS), N-Queens Problem, various Sorting Algorithms (Merge, Quick), Unique Path Calculations, Cycle Detection in Linked Lists, and Shortest Path Algorithms (Dijkstra, Bellman-Ford, Floyd-Warshall)',
+    technology: ['ReactJs', 'NextJs', 'JavaScript'],
+    rootStack: 'Next Js',
+  },
+
   {
     id: '01',
     name: 'My Learning 101',
@@ -417,25 +488,7 @@ export const projectsData: ProjectSchema[] = [
     ],
     rootStack: 'React Native',
   },
-  {
-    id: '11',
-    name: 'Meal Manager',
-    type: 'mobile',
-    imgPath: '/assets/meal-manager.png',
-    liveUrl: 'https://play.google.com/store/apps/details?id=com.messmanager',
-    sourceCodeUrl: 'https://github.com/AlaminPu1007/Meal-Manager',
-    description:
-      'Developed Meal Manager, a popular React Native mobile app for tracking daily meals and mess expenses, with over 1000 downloads. Simplifies expense splitting and sharing among mess members for seamless management.',
-    technology: [
-      'React Native',
-      'NodeJS',
-      'MySql',
-      'React Navigation',
-      'Adonis Js',
-      'Context API',
-    ],
-    rootStack: 'React Native',
-  },
+
   {
     id: '12',
     name: 'Amar Bornomala',

@@ -1,8 +1,8 @@
 'use client';
 
 import { ProjectSchema, projectsData } from '@/app/constant';
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+// import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -77,9 +77,14 @@ const ProjectComponent = () => {
           </li>
         </ul>
         <div className='mt-[40px] grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3'>
-          {data.map((item: ProjectSchema, index: number) => {
+          {data.map((item: ProjectSchema) => {
             return (
-              <motion.div
+              <div
+                data-testid='project-data-id'
+                key={item.id}
+                className='group dark:hover:border-theme-btn/20 relative flex flex-col overflow-hidden rounded-xl border border-gray-100 bg-white shadow-md transition-all duration-500 hover:-translate-y-1 hover:shadow-xl dark:border-gray-800 dark:bg-[#19192d]'
+              >
+                {/*<motion.div
                 key={item.id}
                 className='group dark:hover:border-theme-btn/20 relative flex flex-col overflow-hidden rounded-xl border border-gray-100 bg-white shadow-md transition-all duration-500 hover:-translate-y-2 hover:shadow-xl dark:border-gray-800 dark:bg-[#19192d]'
                 initial={{ opacity: 0, y: 30 }}
@@ -91,7 +96,8 @@ const ProjectComponent = () => {
                   delay: index * 0.08,
                 }}
                 data-testid='project-data-id'
-              >
+
+              >*/}
                 <div className='relative h-[260px] w-full overflow-hidden'>
                   <Image
                     src={item.imgPath}
@@ -99,7 +105,7 @@ const ProjectComponent = () => {
                     fill
                     priority
                     sizes='100%'
-                    className='object-cover object-top transition-transform duration-700 group-hover:scale-110'
+                    className='object-cover object-top transition-transform duration-700 group-hover:scale-103'
                     placeholder='blur'
                     blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN89R8AAtkB6zy+wn8AAAAASUVORK5CYII='
                   />
@@ -115,7 +121,10 @@ const ProjectComponent = () => {
                     <h2 className='m-0 p-0 text-xl font-medium tracking-wide text-[#42446E] uppercase lg:text-2xl dark:text-[#CCCCCC]'>
                       {item.name}
                     </h2>
-                    <p className='py-3 text-base leading-relaxed break-words text-[#666666] dark:text-[#A7A7A7]'>
+                    <p
+                      title={item.description}
+                      className='my-3 line-clamp-4 overflow-hidden text-base leading-relaxed break-words text-[#666666] dark:text-[#A7A7A7]'
+                    >
                       {item.description}
                     </p>
 
@@ -216,7 +225,8 @@ const ProjectComponent = () => {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+                {/* </motion.div> */}
+              </div>
             );
           })}
         </div>
